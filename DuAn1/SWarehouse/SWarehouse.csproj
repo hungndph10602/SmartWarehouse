@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F43F3C8C-5860-4FAA-88A0-3600F82829AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SWarehouse</RootNamespace>
+    <AssemblyName>SWarehouse</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SWarehouse.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>62BCAC02AADD13DC0BCE96B3F0C26FE68879DE02</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNT.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BRAND.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORy.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="COLOR.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CustomerServices\CustomerService.cs" />
+    <Compile Include="Controllers\CustomerServices\ICustomerService.cs" />
+    <Compile Include="Controllers\GetIDServices\GetIDService.cs" />
+    <Compile Include="Controllers\GetIDServices\IGetIDService.cs" />
+    <Compile Include="Controllers\GoodsDeliveryNoteServices\GoodsDeliveryNoteService.cs" />
+    <Compile Include="Controllers\GoodsDeliveryNoteServices\IGoodsDeliveryNoteService.cs" />
+    <Compile Include="Controllers\GRNServices\GRNService.cs" />
+    <Compile Include="Controllers\GRNServices\IGRNService.cs" />
+    <Compile Include="Controllers\NoteRequestServices\INoteRequestServices.cs" />
+    <Compile Include="Controllers\NoteRequestServices\NoteRequestServices.cs" />
+    <Compile Include="Controllers\OrderServices\IOrderService.cs" />
+    <Compile Include="Controllers\OrderServices\OrderService.cs" />
+    <Compile Include="Controllers\ProductServices\IProductServices.cs" />
+    <Compile Include="Controllers\ProductServices\ProductService.cs" />
+    <Compile Include="Controllers\StaffServices\IStaffServices.cs" />
+    <Compile Include="Controllers\StaffServices\StaffServices.cs" />
+    <Compile Include="Controllers\StatisticalServices\IStatisticalService.cs" />
+    <Compile Include="Controllers\StatisticalServices\StatisticalService.cs" />
+    <Compile Include="Controllers\SupplierServices\ISupplierService.cs" />
+    <Compile Include="Controllers\SupplierServices\SupplierService.cs" />
+    <Compile Include="Controllers\UserServices\IUserSevice.cs" />
+    <Compile Include="Controllers\UserServices\UserService.cs" />
+    <Compile Include="CUSTOMER.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERY_REQUESTS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DELIVERY_REQUEST_DETAILS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D01_AddCustomerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D01_AddCustomerDialog.Designer.cs">
+      <DependentUpon>D01_AddCustomerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D02_AddGRNDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D02_AddGRNDialog.Designer.cs">
+      <DependentUpon>D02_AddGRNDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D03_AddGRNDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D03_AddGRNDetailDialog.Designer.cs">
+      <DependentUpon>D03_AddGRNDetailDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D04_AddGDNDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D04_AddGDNDialog.Designer.cs">
+      <DependentUpon>D04_AddGDNDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D05_AddGDNDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D05_AddGDNDetailDialog.Designer.cs">
+      <DependentUpon>D05_AddGDNDetailDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D06_AddOrderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D06_AddOrderDialog.Designer.cs">
+      <DependentUpon>D06_AddOrderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D07_AddOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D07_AddOrderDetail.Designer.cs">
+      <DependentUpon>D07_AddOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D08_SuplierDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D08_SuplierDialog.Designer.cs">
+      <DependentUpon>D08_SuplierDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D09_AddSupplierDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D09_AddSupplierDialog.Designer.cs">
+      <DependentUpon>D09_AddSupplierDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D10_EditSupplierDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D10_EditSupplierDialog.Designer.cs">
+      <DependentUpon>D10_EditSupplierDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D11_NoteRequestDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D11_NoteRequestDialog.Designer.cs">
+      <DependentUpon>D11_NoteRequestDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D12_NoteRequestDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D12_NoteRequestDetailDialog.Designer.cs">
+      <DependentUpon>D12_NoteRequestDetailDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D13_CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D13_CreateAccount.Designer.cs">
+      <DependentUpon>D13_CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D14_addproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D14_addproduct.Designer.cs">
+      <DependentUpon>D14_addproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D15_editproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D15_editproduct.Designer.cs">
+      <DependentUpon>D15_editproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\D16_editCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\D16_editCustomer.Designer.cs">
+      <DependentUpon>D16_editCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\PayGRNDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PayGRNDialog.Designer.cs">
+      <DependentUpon>PayGRNDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GOODS_DELIVERY_NOTE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GOODS_DELIVERY_NOTE_DETAILS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GOODS_RECEIVED_NOTE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GOODS_RECEIVED_NOTE_DETAILS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MATERIAL.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BillModels\F07_QuanLyHoaDonModel.cs" />
+    <Compile Include="Models\CustomerModels\F04_QLKhachHang.cs" />
+    <Compile Include="Models\GDNModels\F06_QLXuatKhoModel.cs" />
+    <Compile Include="Models\GRNModels\ManageWarehouseInputModel.cs" />
+    <Compile Include="Models\NoteRequestModels\F12_NoteRequestModel.cs" />
+    <Compile Include="Models\ProductModels\ProductModels.cs" />
+    <Compile Include="Models\ResponseModel.cs" />
+    <Compile Include="Models\StaffModels\F09__QLNhanVienModel.cs" />
+    <Compile Include="Models\SupplierModels\F08_SupplierModels.cs" />
+    <Compile Include="ORDER.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORDER_DETAILS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT_STORE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT_WAREHOUSE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ROLE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHIPMENT_OF_GOODS.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIZE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_CountProReceivedByNameInDay_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_CountProReceivedByNameInMonth_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_CountProReceivedByNameInQuarter_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_CountProReceivedByNameInWeek_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllAccountIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllCustomerIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllCustomer_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_GetAllDRDetailByID_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sp_GetAllDR_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllGDN_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllGRN_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllOrderDetailByOrderId_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllOrder_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getAllProductIDAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllProduct_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllStaff_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getAllSupplierIDAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllSupplier_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAllUnDoneRequest_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_getAllWarehouseIDAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetAmountOwn_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetBrandIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetColorIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetCustomerByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetCustomerStatistical_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetGDNDetailById_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetGRNDetailByGRNID_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetInMoneyByOrderInMonth_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetInMoneyByOrderInQuarter_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetInMoneyByOrderInWeek_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMoneyOutByGRNInMonth_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMoneyOutByGRNInQuarter_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetMoneyOutByGRNInWeek_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetOrderByID_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductById_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductInStatistical_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductOutInDay_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductOutInMonth_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductOutInQuarter_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductOutInWeek_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductOutStatistical_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductQuantityInWarehouse_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetProductStatistical_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetRequestByID_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetRequestByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetRequestDetailByRequestID_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetRoleIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetStaffById_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_GetUnitIdAndName_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_Login_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_SearchGDNByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_SearchGRNByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_SearchOrderByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_SearchStaffByString_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_SearchSupplier_Result.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_STORE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_WAREHOUSE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STORE.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUPPLIER.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SWareDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SWareDB.Context.tt</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SWareDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SWareDB.tt</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SWareDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SWareDB.edmx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SWarehouseDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SWarehouseDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TYPE_OF_CATEGORY.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UNIT.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\AppConstants.cs" />
+    <Compile Include="Views\F01_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F01_Login.designer.cs">
+      <DependentUpon>F01_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F02_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F02_Main.designer.cs">
+      <DependentUpon>F02_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F03_QLHoSoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F03_QLHoSoNhanVien.designer.cs">
+      <DependentUpon>F03_QLHoSoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F04_QLKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F04_QLKhachHang.designer.cs">
+      <DependentUpon>F04_QLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F05_QlNhapkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F05_QlNhapkho.designer.cs">
+      <DependentUpon>F05_QlNhapkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F06_QLXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F06_QLXuatKho.designer.cs">
+      <DependentUpon>F06_QLXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F07_QLHOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F07_QLHOADON.designer.cs">
+      <DependentUpon>F07_QLHOADON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F08_QLNHACUNGCAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F08_QLNHACUNGCAP.designer.cs">
+      <DependentUpon>F08_QLNHACUNGCAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F09_QLNHANVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F09_QLNHANVIEN.designer.cs">
+      <DependentUpon>F09_QLNHANVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F10_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F10_ChangePassword.designer.cs">
+      <DependentUpon>F10_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F11_FogotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F11_FogotPassword.designer.cs">
+      <DependentUpon>F11_FogotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F12_NoteRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F12_NoteRequest.designer.cs">
+      <DependentUpon>F12_NoteRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F13_Statistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F13_Statistical.designer.cs">
+      <DependentUpon>F13_Statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F14_InsideMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F14_InsideMain.Designer.cs">
+      <DependentUpon>F14_InsideMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\F15_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\F15_Product.Designer.cs">
+      <DependentUpon>F15_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse.cs">
+      <DependentUpon>SWareDB.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dialog\D01_AddCustomerDialog.resx">
+      <DependentUpon>D01_AddCustomerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D02_AddGRNDialog.resx">
+      <DependentUpon>D02_AddGRNDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D03_AddGRNDetailDialog.resx">
+      <DependentUpon>D03_AddGRNDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D04_AddGDNDialog.resx">
+      <DependentUpon>D04_AddGDNDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D05_AddGDNDetailDialog.resx">
+      <DependentUpon>D05_AddGDNDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D06_AddOrderDialog.resx">
+      <DependentUpon>D06_AddOrderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D07_AddOrderDetail.resx">
+      <DependentUpon>D07_AddOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D08_SuplierDialog.resx">
+      <DependentUpon>D08_SuplierDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D09_AddSupplierDialog.resx">
+      <DependentUpon>D09_AddSupplierDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D10_EditSupplierDialog.resx">
+      <DependentUpon>D10_EditSupplierDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D11_NoteRequestDialog.resx">
+      <DependentUpon>D11_NoteRequestDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D12_NoteRequestDetailDialog.resx">
+      <DependentUpon>D12_NoteRequestDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D13_CreateAccount.resx">
+      <DependentUpon>D13_CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D14_addproduct.resx">
+      <DependentUpon>D14_addproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D15_editproduct.resx">
+      <DependentUpon>D15_editproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\D16_editCustomer.resx">
+      <DependentUpon>D16_editCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PayGRNDialog.resx">
+      <DependentUpon>PayGRNDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F01_Login.resx">
+      <DependentUpon>F01_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F02_Main.resx">
+      <DependentUpon>F02_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F03_QLHoSoNhanVien.resx">
+      <DependentUpon>F03_QLHoSoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F04_QLKhachHang.resx">
+      <DependentUpon>F04_QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F05_QlNhapkho.resx">
+      <DependentUpon>F05_QlNhapkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F06_QLXuatKho.resx">
+      <DependentUpon>F06_QLXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F07_QLHOADON.resx">
+      <DependentUpon>F07_QLHOADON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F08_QLNHACUNGCAP.resx">
+      <DependentUpon>F08_QLNHACUNGCAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F09_QLNHANVIEN.resx">
+      <DependentUpon>F09_QLNHANVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F10_ChangePassword.resx">
+      <DependentUpon>F10_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F11_FogotPassword.resx">
+      <DependentUpon>F11_FogotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F12_NoteRequest.resx">
+      <DependentUpon>F12_NoteRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F13_Statistical.resx">
+      <DependentUpon>F13_Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F14_InsideMain.resx">
+      <DependentUpon>F14_InsideMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\F15_Product.resx">
+      <DependentUpon>F15_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\SWarehouse.Controllers.StaffServices.IStaffServices.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Controllers.StaffServices.StaffServices.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Controllers.StatisticalServices.IStatisticalService.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Controllers.StatisticalServices.StatisticalService.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.BillModels.F07_QuanLyHoaDonChiTietModel2.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.BillModels.F07_QuanLyHoaDonModel.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.CustomerModels.F04_QLKhachHang.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.CustomerModels.F04_QLKhachHangModel.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.GDNModels.F06_QLXuatKhoChiTiet.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.GDNModels.F06_QLXuatKhoModel.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.GRNModels.ManageWarehouseInputDetaiModel.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.GRNModels.ManageWarehouseInputModel.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.ProductModels.ProductModels.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.StaffModels.F09__QLNhanVienModel1.datasource" />
+    <None Include="Properties\DataSources\SWarehouse.Models.SupplierModels.F08_SupplierModels.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="SWareDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SWareDB.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EntityDeploy>
+    <None Include="SWareDB.edmx.diagram">
+      <DependentUpon>SWareDB.edmx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SWarehouseDBDataSet2.xsc">
+      <DependentUpon>SWarehouseDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SWarehouseDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SWarehouseDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SWarehouseDBDataSet2.xss">
+      <DependentUpon>SWarehouseDBDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklists.png" />
+    <None Include="Resources\buy.png" />
+    <None Include="Resources\add-house.png" />
+    <None Include="Resources\business-idea.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\confirmation.png" />
+    <Content Include="Resources\diskette.png" />
+    <Content Include="Resources\edit.png" />
+    <None Include="Resources\flash.png" />
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\invoices.png" />
+    <None Include="Resources\notes.png" />
+    <None Include="Resources\output.png" />
+    <None Include="Resources\invisible.png" />
+    <None Include="Resources\invisible %281%29.png" />
+    <None Include="Resources\exchange.png" />
+    <Content Include="Resources\plus.png" />
+    <None Include="Resources\programmer.png" />
+    <None Include="Resources\programmer %281%29.png" />
+    <Content Include="Resources\right-arrow.png" />
+    <Content Include="Resources\search.png" />
+    <None Include="Resources\sign-up.png" />
+    <None Include="Resources\steward.png" />
+    <None Include="Resources\SmartWare House1.png" />
+    <None Include="Resources\SmartWare House1 %282%29.png" />
+    <Content Include="Resources\trash.png" />
+    <None Include="Resources\visibility.png" />
+    <None Include="Resources\visibility %281%29.png" />
+    <Content Include="SWarehouseDB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>SWarehouseDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\up-arrow.png" />
+    <Content Include="SWareDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SWareDB.edmx</DependentUpon>
+      <LastGenOutput>SWareDB.Context.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SWareDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SWareDB.edmx</DependentUpon>
+      <LastGenOutput>SWareDB.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SWarehouseDB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGridViewAutoFilter\DataGridViewAutoFilter.csproj">
+      <Project>{5a4b4b14-d3b5-4d54-80ec-0877c1e6e73a}</Project>
+      <Name>DataGridViewAutoFilter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

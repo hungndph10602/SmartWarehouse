@@ -1,0 +1,1708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SWareDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SWareDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACCOUNTS" EntityType="SWareDBModel.ACCOUNT" />
+    <EntitySet Name="BRANDS" EntityType="SWareDBModel.BRAND" />
+    <EntitySet Name="CATEGORIES" EntityType="SWareDBModel.CATEGORy" />
+    <EntitySet Name="COLORs" EntityType="SWareDBModel.COLOR" />
+    <EntitySet Name="CUSTOMERS" EntityType="SWareDBModel.CUSTOMER" />
+    <EntitySet Name="DELIVERY_REQUEST_DETAILS" EntityType="SWareDBModel.DELIVERY_REQUEST_DETAILS" />
+    <EntitySet Name="DELIVERY_REQUESTS" EntityType="SWareDBModel.DELIVERY_REQUESTS" />
+    <EntitySet Name="GOODS_DELIVERY_NOTE" EntityType="SWareDBModel.GOODS_DELIVERY_NOTE" />
+    <EntitySet Name="GOODS_DELIVERY_NOTE_DETAILS" EntityType="SWareDBModel.GOODS_DELIVERY_NOTE_DETAILS" />
+    <EntitySet Name="GOODS_RECEIVED_NOTE" EntityType="SWareDBModel.GOODS_RECEIVED_NOTE" />
+    <EntitySet Name="GOODS_RECEIVED_NOTE_DETAILS" EntityType="SWareDBModel.GOODS_RECEIVED_NOTE_DETAILS" />
+    <EntitySet Name="MATERIALs" EntityType="SWareDBModel.MATERIAL" />
+    <EntitySet Name="ORDER_DETAILS" EntityType="SWareDBModel.ORDER_DETAILS" />
+    <EntitySet Name="ORDERS" EntityType="SWareDBModel.ORDER" />
+    <EntitySet Name="PRODUCT_STORE" EntityType="SWareDBModel.PRODUCT_STORE" />
+    <EntitySet Name="PRODUCT_WAREHOUSE" EntityType="SWareDBModel.PRODUCT_WAREHOUSE" />
+    <EntitySet Name="PRODUCTS" EntityType="SWareDBModel.PRODUCT" />
+    <EntitySet Name="ROLEs" EntityType="SWareDBModel.ROLE" />
+    <EntitySet Name="SHIPMENT_OF_GOODS" EntityType="SWareDBModel.SHIPMENT_OF_GOODS" />
+    <EntitySet Name="SIZEs" EntityType="SWareDBModel.SIZE" />
+    <EntitySet Name="STAFF_STORE" EntityType="SWareDBModel.STAFF_STORE" />
+    <EntitySet Name="STAFF_WAREHOUSE" EntityType="SWareDBModel.STAFF_WAREHOUSE" />
+    <EntitySet Name="STAFFS" EntityType="SWareDBModel.STAFF" />
+    <EntitySet Name="STORES" EntityType="SWareDBModel.STORE" />
+    <EntitySet Name="SUPPLIERS" EntityType="SWareDBModel.SUPPLIER" />
+    <EntitySet Name="TYPE_OF_CATEGORY" EntityType="SWareDBModel.TYPE_OF_CATEGORY" />
+    <EntitySet Name="UNITs" EntityType="SWareDBModel.UNIT" />
+    <EntitySet Name="WAREHOUSES" EntityType="SWareDBModel.Warehouse" />
+    <AssociationSet Name="FK_ACCOUNT_ROLE" Association="SWareDBModel.FK_ACCOUNT_ROLE">
+      <End Role="ROLE" EntitySet="ROLEs" />
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ACCOUNT_STAFFS" Association="SWareDBModel.FK_ACCOUNT_STAFFS">
+      <End Role="STAFF" EntitySet="STAFFS" />
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DELIVERY_REQUESTS_ACCOUNTS" Association="SWareDBModel.FK_DELIVERY_REQUESTS_ACCOUNTS">
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+      <End Role="DELIVERY_REQUESTS" EntitySet="DELIVERY_REQUESTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_DELIVERY_NOTE_ACCOUNTS" Association="SWareDBModel.FK_GOODS_DELIVERY_NOTE_ACCOUNTS">
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+      <End Role="GOODS_DELIVERY_NOTE" EntitySet="GOODS_DELIVERY_NOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_RECEIVED_NOTE_ACCOUNTS" Association="SWareDBModel.FK_GOODS_RECEIVED_NOTE_ACCOUNTS">
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+      <End Role="GOODS_RECEIVED_NOTE" EntitySet="GOODS_RECEIVED_NOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERS_ACCOUNTS" Association="SWareDBModel.FK_ORDERS_ACCOUNTS">
+      <End Role="ACCOUNT" EntitySet="ACCOUNTS" />
+      <End Role="ORDER" EntitySet="ORDERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_BRANDS" Association="SWareDBModel.FK_PRODUCTS_BRANDS">
+      <End Role="BRAND" EntitySet="BRANDS" />
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TYPE_OF_CATEGORY_CATEGORIES" Association="SWareDBModel.FK_TYPE_OF_CATEGORY_CATEGORIES">
+      <End Role="CATEGORy" EntitySet="CATEGORIES" />
+      <End Role="TYPE_OF_CATEGORY" EntitySet="TYPE_OF_CATEGORY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_COLOR" Association="SWareDBModel.FK_PRODUCTS_COLOR">
+      <End Role="COLOR" EntitySet="COLORs" />
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDERS_CUSTOMERS" Association="SWareDBModel.FK_ORDERS_CUSTOMERS">
+      <End Role="CUSTOMER" EntitySet="CUSTOMERS" />
+      <End Role="ORDER" EntitySet="ORDERS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DELIVERY_REQUEST_DETAILS_DELIVERY_REQUESTS" Association="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_DELIVERY_REQUESTS">
+      <End Role="DELIVERY_REQUESTS" EntitySet="DELIVERY_REQUESTS" />
+      <End Role="DELIVERY_REQUEST_DETAILS" EntitySet="DELIVERY_REQUEST_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DELIVERY_REQUEST_DETAILS_PRODUCTS" Association="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="DELIVERY_REQUEST_DETAILS" EntitySet="DELIVERY_REQUEST_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DELIVERY_REQUESTS_STORES" Association="SWareDBModel.FK_DELIVERY_REQUESTS_STORES">
+      <End Role="STORE" EntitySet="STORES" />
+      <End Role="DELIVERY_REQUESTS" EntitySet="DELIVERY_REQUESTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_DELIVERY_NOTE_DELIVERY_REQUESTS" Association="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DELIVERY_REQUESTS">
+      <End Role="DELIVERY_REQUESTS" EntitySet="DELIVERY_REQUESTS" />
+      <End Role="GOODS_DELIVERY_NOTE" EntitySet="GOODS_DELIVERY_NOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_DELIVERY_NOTE_DETAILS_GOODS_DELIVERY_NOTE" Association="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_GOODS_DELIVERY_NOTE">
+      <End Role="GOODS_DELIVERY_NOTE" EntitySet="GOODS_DELIVERY_NOTE" />
+      <End Role="GOODS_DELIVERY_NOTE_DETAILS" EntitySet="GOODS_DELIVERY_NOTE_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_DELIVERY_NOTE_WAREHOUSE" Association="SWareDBModel.FK_GOODS_DELIVERY_NOTE_WAREHOUSE">
+      <End Role="Warehouse" EntitySet="WAREHOUSES" />
+      <End Role="GOODS_DELIVERY_NOTE" EntitySet="GOODS_DELIVERY_NOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_DELIVERY_NOTE_DETAILS_PRODUCTS" Association="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="GOODS_DELIVERY_NOTE_DETAILS" EntitySet="GOODS_DELIVERY_NOTE_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS_GOODS_RECEIVED_NOTE" Association="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS_GOODS_RECEIVED_NOTE">
+      <End Role="GOODS_RECEIVED_NOTE" EntitySet="GOODS_RECEIVED_NOTE" />
+      <End Role="GOODS_RECEIVED_NOTE_DETAILS" EntitySet="GOODS_RECEIVED_NOTE_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_RECEIVED_NOTE_WAREHOUSE" Association="SWareDBModel.FK_GOODS_RECEIVED_NOTE_WAREHOUSE">
+      <End Role="Warehouse" EntitySet="WAREHOUSES" />
+      <End Role="GOODS_RECEIVED_NOTE" EntitySet="GOODS_RECEIVED_NOTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIPMENT_OF_GOODS_GOODS_RECEIVED_NOTE" Association="SWareDBModel.FK_SHIPMENT_OF_GOODS_GOODS_RECEIVED_NOTE">
+      <End Role="GOODS_RECEIVED_NOTE" EntitySet="GOODS_RECEIVED_NOTE" />
+      <End Role="SHIPMENT_OF_GOODS" EntitySet="SHIPMENT_OF_GOODS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS" Association="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="GOODS_RECEIVED_NOTE_DETAILS" EntitySet="GOODS_RECEIVED_NOTE_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GOODS_RECEIVED_NOTE_DETAILS_SUPPLIERS" Association="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_SUPPLIERS">
+      <End Role="SUPPLIER" EntitySet="SUPPLIERS" />
+      <End Role="GOODS_RECEIVED_NOTE_DETAILS" EntitySet="GOODS_RECEIVED_NOTE_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIT_Material" Association="SWareDBModel.FK_UNIT_Material">
+      <End Role="MATERIAL" EntitySet="MATERIALs" />
+      <End Role="UNIT" EntitySet="UNITs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDER_DETAILS_ORDERS" Association="SWareDBModel.FK_ORDER_DETAILS_ORDERS">
+      <End Role="ORDER" EntitySet="ORDERS" />
+      <End Role="ORDER_DETAILS" EntitySet="ORDER_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ORDER_DETAILS_PRODUCTS" Association="SWareDBModel.FK_ORDER_DETAILS_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="ORDER_DETAILS" EntitySet="ORDER_DETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCT_STORE_PRODUCTS" Association="SWareDBModel.FK_PRODUCT_STORE_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="PRODUCT_STORE" EntitySet="PRODUCT_STORE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCT_STORE_STORES" Association="SWareDBModel.FK_PRODUCT_STORE_STORES">
+      <End Role="STORE" EntitySet="STORES" />
+      <End Role="PRODUCT_STORE" EntitySet="PRODUCT_STORE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCT_WAREHOUSE_PRODUCTS" Association="SWareDBModel.FK_PRODUCT_WAREHOUSE_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="PRODUCT_WAREHOUSE" EntitySet="PRODUCT_WAREHOUSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCT_WAREHOUSE_WAREHOUSES" Association="SWareDBModel.FK_PRODUCT_WAREHOUSE_WAREHOUSES">
+      <End Role="Warehouse" EntitySet="WAREHOUSES" />
+      <End Role="PRODUCT_WAREHOUSE" EntitySet="PRODUCT_WAREHOUSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUCTS_UNIT" Association="SWareDBModel.FK_PRODUCTS_UNIT">
+      <End Role="UNIT" EntitySet="UNITs" />
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SHIPMENT_OF_GOODS_PRODUCTS" Association="SWareDBModel.FK_SHIPMENT_OF_GOODS_PRODUCTS">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="SHIPMENT_OF_GOODS" EntitySet="SHIPMENT_OF_GOODS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNIT_SIZE" Association="SWareDBModel.FK_UNIT_SIZE">
+      <End Role="SIZE" EntitySet="SIZEs" />
+      <End Role="UNIT" EntitySet="UNITs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STAFF_STORE_STAFFS" Association="SWareDBModel.FK_STAFF_STORE_STAFFS">
+      <End Role="STAFF" EntitySet="STAFFS" />
+      <End Role="STAFF_STORE" EntitySet="STAFF_STORE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STAFF_STORE_STORES" Association="SWareDBModel.FK_STAFF_STORE_STORES">
+      <End Role="STORE" EntitySet="STORES" />
+      <End Role="STAFF_STORE" EntitySet="STAFF_STORE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STAFF_WAREHOUSE_STAFFS" Association="SWareDBModel.FK_STAFF_WAREHOUSE_STAFFS">
+      <End Role="STAFF" EntitySet="STAFFS" />
+      <End Role="STAFF_WAREHOUSE" EntitySet="STAFF_WAREHOUSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_STAFF_WAREHOUSE_WAREHOUSES" Association="SWareDBModel.FK_STAFF_WAREHOUSE_WAREHOUSES">
+      <End Role="Warehouse" EntitySet="WAREHOUSES" />
+      <End Role="STAFF_WAREHOUSE" EntitySet="STAFF_WAREHOUSE" />
+    </AssociationSet>
+    <AssociationSet Name="PRODUCT_SUPPLIER" Association="SWareDBModel.PRODUCT_SUPPLIER">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="SUPPLIER" EntitySet="SUPPLIERS" />
+    </AssociationSet>
+    <AssociationSet Name="TYPE_OF_PRODUCT" Association="SWareDBModel.TYPE_OF_PRODUCT">
+      <End Role="PRODUCT" EntitySet="PRODUCTS" />
+      <End Role="TYPE_OF_CATEGORY" EntitySet="TYPE_OF_CATEGORY" />
+    </AssociationSet>
+    <FunctionImport Name="SP_BreakPayOrder">
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ChangePassword">
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="new_password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CheckValidUsername" ReturnType="Collection(Int32)">
+      <Parameter Name="username" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CountProReceivedByNameInDay" ReturnType="Collection(SWareDBModel.SP_CountProReceivedByNameInDay_Result)" />
+    <FunctionImport Name="SP_CountProReceivedByNameInMonth" ReturnType="Collection(SWareDBModel.SP_CountProReceivedByNameInMonth_Result)" />
+    <FunctionImport Name="SP_CountProReceivedByNameInQuarter" ReturnType="Collection(SWareDBModel.SP_CountProReceivedByNameInQuarter_Result)" />
+    <FunctionImport Name="SP_CountProReceivedByNameInWeek" ReturnType="Collection(SWareDBModel.SP_CountProReceivedByNameInWeek_Result)" />
+    <FunctionImport Name="SP_CreateAccount">
+      <Parameter Name="staff_id" Mode="In" Type="Int32" />
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="displayname" Mode="In" Type="String" />
+      <Parameter Name="role_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateCustomer">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateDeliveryRequest" ReturnType="Collection(Int32)">
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="createdate" Mode="In" Type="DateTime" />
+      <Parameter Name="moreinfo" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateDeliveryRequestDetail">
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+      <Parameter Name="request_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateGDN_Detail">
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+      <Parameter Name="gdn_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+      <Parameter Name="actual_amount" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateGRNDetail">
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+      <Parameter Name="grn_id" Mode="In" Type="Int32" />
+      <Parameter Name="supplier_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+      <Parameter Name="actual_amount" Mode="In" Type="Int32" />
+      <Parameter Name="cost" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateOrderAdd" ReturnType="Collection(Int32)">
+      <Parameter Name="customer_id" Mode="In" Type="Int32" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="create_date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateOrderDetail">
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateProduct">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="code" Mode="In" Type="String" />
+      <Parameter Name="unit_id" Mode="In" Type="Int32" />
+      <Parameter Name="color_id" Mode="In" Type="Int32" />
+      <Parameter Name="brand_id" Mode="In" Type="Int32" />
+      <Parameter Name="price" Mode="In" Type="Decimal" />
+      <Parameter Name="img" Mode="In" Type="Binary" />
+      <Parameter Name="short_descreption" Mode="In" Type="String" />
+      <Parameter Name="long_descreption" Mode="In" Type="String" />
+      <Parameter Name="usermanual" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateSupplier">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="moreinfo" Mode="In" Type="String" />
+      <Parameter Name="contactdate" Mode="In" Type="DateTime" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAllAccountIdAndName" ReturnType="Collection(SWareDBModel.SP_GetAllAccountIdAndName_Result)" />
+    <FunctionImport Name="SP_GetAllCustomer" ReturnType="Collection(SWareDBModel.SP_GetAllCustomer_Result)" />
+    <FunctionImport Name="SP_GetAllCustomerIdAndName" ReturnType="Collection(SWareDBModel.SP_GetAllCustomerIdAndName_Result)" />
+    <FunctionImport Name="Sp_GetAllDR" ReturnType="Collection(SWareDBModel.Sp_GetAllDR_Result)" />
+    <FunctionImport Name="Sp_GetAllDRDetailByID" ReturnType="Collection(SWareDBModel.Sp_GetAllDRDetailByID_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAllGDN" ReturnType="Collection(SWareDBModel.SP_GetAllGDN_Result)" />
+    <FunctionImport Name="SP_GetAllOrder" ReturnType="Collection(SWareDBModel.SP_GetAllOrder_Result)" />
+    <FunctionImport Name="SP_GetAllOrderDetailByOrderId" ReturnType="Collection(SWareDBModel.SP_GetAllOrderDetailByOrderId_Result)">
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAllProduct" ReturnType="Collection(SWareDBModel.SP_GetAllProduct_Result)" />
+    <FunctionImport Name="SP_GetAllSupplier" ReturnType="Collection(SWareDBModel.SP_GetAllSupplier_Result)" />
+    <FunctionImport Name="SP_getAllSupplierIDAndName" ReturnType="Collection(SWareDBModel.SP_getAllSupplierIDAndName_Result)" />
+    <FunctionImport Name="SP_getAllWarehouseIDAndName" ReturnType="Collection(SWareDBModel.SP_getAllWarehouseIDAndName_Result)" />
+    <FunctionImport Name="SP_GetBrandIdAndName" ReturnType="Collection(SWareDBModel.SP_GetBrandIdAndName_Result)" />
+    <FunctionImport Name="SP_GetColorIdAndName" ReturnType="Collection(SWareDBModel.SP_GetColorIdAndName_Result)" />
+    <FunctionImport Name="SP_GetCustomerByString" ReturnType="Collection(SWareDBModel.SP_GetCustomerByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetGDNDetailById" ReturnType="Collection(SWareDBModel.SP_GetGDNDetailById_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetGRNDetailByGRNID" ReturnType="Collection(SWareDBModel.SP_GetGRNDetailByGRNID_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetOrderByID" ReturnType="Collection(SWareDBModel.SP_GetOrderByID_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductById" ReturnType="Collection(SWareDBModel.SP_GetProductById_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductQuantity" ReturnType="Collection(Int32)">
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRequestByID" ReturnType="Collection(SWareDBModel.SP_GetRequestByID_Result)">
+      <Parameter Name="requestId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRequestByString" ReturnType="Collection(SWareDBModel.SP_GetRequestByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetRoleIdAndName" ReturnType="Collection(SWareDBModel.SP_GetRoleIdAndName_Result)" />
+    <FunctionImport Name="SP_GetStaffById" ReturnType="Collection(SWareDBModel.SP_GetStaffById_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetTotalMoney" ReturnType="Collection(Decimal)">
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetUnitIdAndName" ReturnType="Collection(SWareDBModel.SP_GetUnitIdAndName_Result)" />
+    <FunctionImport Name="SP_Login" ReturnType="Collection(SWareDBModel.SP_Login_Result)">
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PayOrder">
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+      <Parameter Name="input_money" Mode="In" Type="Decimal" />
+      <Parameter Name="actual_timepay" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SearchGDNByString" ReturnType="Collection(SWareDBModel.SP_SearchGDNByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SearchOrderByString" ReturnType="Collection(SWareDBModel.SP_SearchOrderByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SearchSupplier" ReturnType="Collection(SWareDBModel.SP_SearchSupplier_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateDeliveryRequestStatus">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateGDNStatus">
+      <Parameter Name="GRN_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_updateGRNStatus">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateOrderProductQuantity">
+      <Parameter Name="order_id" Mode="In" Type="Int32" />
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateProduct">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="price" Mode="In" Type="Decimal" />
+      <Parameter Name="img" Mode="In" Type="Binary" />
+      <Parameter Name="short_descreption" Mode="In" Type="String" />
+      <Parameter Name="long_descreption" Mode="In" Type="String" />
+      <Parameter Name="usermanual" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateStaff">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="salary" Mode="In" Type="Decimal" />
+      <Parameter Name="moreInfo" Mode="In" Type="String" />
+      <Parameter Name="img" Mode="In" Type="Binary" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateSupplier">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="moreInfo" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetInMoneyByOrderInQuarter" ReturnType="Collection(SWareDBModel.SP_GetInMoneyByOrderInQuarter_Result)" />
+    <FunctionImport Name="SP_GetInMoneyByOrderInWeek" ReturnType="Collection(SWareDBModel.SP_GetInMoneyByOrderInWeek_Result)" />
+    <FunctionImport Name="SP_GetMoneyOutByGRNInMonth" ReturnType="Collection(SWareDBModel.SP_GetMoneyOutByGRNInMonth_Result)" />
+    <FunctionImport Name="SP_GetMoneyOutByGRNInQuarter" ReturnType="Collection(SWareDBModel.SP_GetMoneyOutByGRNInQuarter_Result)" />
+    <FunctionImport Name="SP_GetMoneyOutByGRNInWeek" ReturnType="Collection(SWareDBModel.SP_GetMoneyOutByGRNInWeek_Result)" />
+    <FunctionImport Name="SP_GetProductByString" ReturnType="Collection(SWareDBModel.SP_GetProductByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductOutInDay" ReturnType="Collection(SWareDBModel.SP_GetProductOutInDay_Result)" />
+    <FunctionImport Name="SP_GetProductOutInMonth" ReturnType="Collection(SWareDBModel.SP_GetProductOutInMonth_Result)" />
+    <FunctionImport Name="SP_GetProductOutInQuarter" ReturnType="Collection(SWareDBModel.SP_GetProductOutInQuarter_Result)" />
+    <FunctionImport Name="SP_GetProductOutInWeek" ReturnType="Collection(SWareDBModel.SP_GetProductOutInWeek_Result)" />
+    <FunctionImport Name="SP_GetInMoneyByOrderInMonth" ReturnType="Collection(SWareDBModel.SP_GetInMoneyByOrderInMonth_Result)" />
+    <FunctionImport Name="SP_GetAllGRN" ReturnType="Collection(SWareDBModel.SP_GetAllGRN_Result)" />
+    <FunctionImport Name="SP_GetCustomerStatistical" ReturnType="Collection(SWareDBModel.SP_GetCustomerStatistical_Result)" />
+    <FunctionImport Name="SP_GetProductInStatistical" ReturnType="Collection(SWareDBModel.SP_GetProductInStatistical_Result)" />
+    <FunctionImport Name="SP_GetProductOutStatistical" ReturnType="Collection(SWareDBModel.SP_GetProductOutStatistical_Result)" />
+    <FunctionImport Name="SP_GetProductStatistical" ReturnType="Collection(SWareDBModel.SP_GetProductStatistical_Result)" />
+    <FunctionImport Name="SP_SearchGRNByString" ReturnType="Collection(SWareDBModel.SP_SearchGRNByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateStaff">
+      <Parameter Name="name" Mode="In" Type="String" />
+      <Parameter Name="address" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="salary" Mode="In" Type="Decimal" />
+      <Parameter Name="img" Mode="In" Type="Binary" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductIdAndName" ReturnType="Collection(SWareDBModel.SP_GetProductIdAndName_Result)" />
+    <FunctionImport Name="SP_getAllProductIDAndName" ReturnType="Collection(SWareDBModel.SP_getAllProductIDAndName_Result)" />
+    <FunctionImport Name="SP_DoneDeliveryRequest">
+      <Parameter Name="request_id" Mode="In" Type="Int32" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="warehouse_id" Mode="In" Type="Int32" />
+      <Parameter Name="createDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAllUnDoneRequest" ReturnType="Collection(SWareDBModel.SP_GetAllUnDoneRequest_Result)" />
+    <FunctionImport Name="SP_GetRequestDetailByRequestID" ReturnType="Collection(SWareDBModel.SP_GetRequestDetailByRequestID_Result)">
+      <Parameter Name="request_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateGDN" ReturnType="Collection(Int32)">
+      <Parameter Name="request_id" Mode="In" Type="Int32" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="warehouse_id" Mode="In" Type="Int32" />
+      <Parameter Name="createDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Moreinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PayGDN">
+      <Parameter Name="gdn_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_UpdateActualAmountGDN">
+      <Parameter Name="gdn_id" Mode="In" Type="Int32" />
+      <Parameter Name="quantity" Mode="In" Type="Int32" />
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_EditCustomer">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAllStaff" ReturnType="Collection(SWareDBModel.SP_GetAllStaff_Result)" />
+    <FunctionImport Name="SP_SearchStaffByString" ReturnType="Collection(SWareDBModel.SP_SearchStaffByString_Result)">
+      <Parameter Name="param" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductQuantityByID">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CreateGRN" ReturnType="Collection(Int32)">
+      <Parameter Name="warehouse_id" Mode="In" Type="Int32" />
+      <Parameter Name="account_id" Mode="In" Type="Int32" />
+      <Parameter Name="create_date" Mode="In" Type="DateTime" />
+      <Parameter Name="moreinfo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PayGRN">
+      <Parameter Name="grn_id" Mode="In" Type="Int32" />
+      <Parameter Name="money_input" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SetGRNProductQuantity">
+      <Parameter Name="grn_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetAmountOwn" ReturnType="Collection(SWareDBModel.SP_GetAmountOwn_Result)">
+      <Parameter Name="grn_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GetProductQuantityInWarehouse" ReturnType="Collection(SWareDBModel.SP_GetProductQuantityInWarehouse_Result)">
+      <Parameter Name="warehouse_id" Mode="In" Type="Int32" />
+      <Parameter Name="product_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="ACCOUNT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Staff_ID" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PassWord" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Role_ID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="ROLE" Relationship="SWareDBModel.FK_ACCOUNT_ROLE" FromRole="ACCOUNT" ToRole="ROLE" />
+    <NavigationProperty Name="STAFF" Relationship="SWareDBModel.FK_ACCOUNT_STAFFS" FromRole="ACCOUNT" ToRole="STAFF" />
+    <NavigationProperty Name="DELIVERY_REQUESTS" Relationship="SWareDBModel.FK_DELIVERY_REQUESTS_ACCOUNTS" FromRole="ACCOUNT" ToRole="DELIVERY_REQUESTS" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_ACCOUNTS" FromRole="ACCOUNT" ToRole="GOODS_DELIVERY_NOTE" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_ACCOUNTS" FromRole="ACCOUNT" ToRole="GOODS_RECEIVED_NOTE" />
+    <NavigationProperty Name="ORDERS" Relationship="SWareDBModel.FK_ORDERS_ACCOUNTS" FromRole="ACCOUNT" ToRole="ORDER" />
+  </EntityType>
+  <EntityType Name="BRAND">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PRODUCTS" Relationship="SWareDBModel.FK_PRODUCTS_BRANDS" FromRole="BRAND" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="CATEGORy">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TYPE_OF_CATEGORY" Relationship="SWareDBModel.FK_TYPE_OF_CATEGORY_CATEGORIES" FromRole="CATEGORy" ToRole="TYPE_OF_CATEGORY" />
+  </EntityType>
+  <EntityType Name="COLOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ColorName" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PRODUCTS" Relationship="SWareDBModel.FK_PRODUCTS_COLOR" FromRole="COLOR" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="CUSTOMER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Boolean" />
+    <NavigationProperty Name="ORDERS" Relationship="SWareDBModel.FK_ORDERS_CUSTOMERS" FromRole="CUSTOMER" ToRole="ORDER" />
+  </EntityType>
+  <EntityType Name="DELIVERY_REQUEST_DETAILS">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Request_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Request_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DELIVERY_REQUESTS" Relationship="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_DELIVERY_REQUESTS" FromRole="DELIVERY_REQUEST_DETAILS" ToRole="DELIVERY_REQUESTS" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_PRODUCTS" FromRole="DELIVERY_REQUEST_DETAILS" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="DELIVERY_REQUESTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Account_ID" Type="Int32" Nullable="false" />
+    <Property Name="Store_ID" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="MoreInfo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="ACCOUNT" Relationship="SWareDBModel.FK_DELIVERY_REQUESTS_ACCOUNTS" FromRole="DELIVERY_REQUESTS" ToRole="ACCOUNT" />
+    <NavigationProperty Name="DELIVERY_REQUEST_DETAILS" Relationship="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_DELIVERY_REQUESTS" FromRole="DELIVERY_REQUESTS" ToRole="DELIVERY_REQUEST_DETAILS" />
+    <NavigationProperty Name="STORE" Relationship="SWareDBModel.FK_DELIVERY_REQUESTS_STORES" FromRole="DELIVERY_REQUESTS" ToRole="STORE" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DELIVERY_REQUESTS" FromRole="DELIVERY_REQUESTS" ToRole="GOODS_DELIVERY_NOTE" />
+  </EntityType>
+  <EntityType Name="GOODS_DELIVERY_NOTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Warehouse_ID" Type="Int32" Nullable="false" />
+    <Property Name="Account_ID" Type="Int32" Nullable="false" />
+    <Property Name="Request_ID" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="MoreInfo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="ACCOUNT" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_ACCOUNTS" FromRole="GOODS_DELIVERY_NOTE" ToRole="ACCOUNT" />
+    <NavigationProperty Name="DELIVERY_REQUESTS" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DELIVERY_REQUESTS" FromRole="GOODS_DELIVERY_NOTE" ToRole="DELIVERY_REQUESTS" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE_DETAILS" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_GOODS_DELIVERY_NOTE" FromRole="GOODS_DELIVERY_NOTE" ToRole="GOODS_DELIVERY_NOTE_DETAILS" />
+    <NavigationProperty Name="Warehouse" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_WAREHOUSE" FromRole="GOODS_DELIVERY_NOTE" ToRole="Warehouse" />
+  </EntityType>
+  <EntityType Name="GOODS_DELIVERY_NOTE_DETAILS">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="GDN_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="GDN_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity_of_request" Type="Int32" />
+    <Property Name="Actual_Amount" Type="Int32" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_GOODS_DELIVERY_NOTE" FromRole="GOODS_DELIVERY_NOTE_DETAILS" ToRole="GOODS_DELIVERY_NOTE" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_PRODUCTS" FromRole="GOODS_DELIVERY_NOTE_DETAILS" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="GOODS_RECEIVED_NOTE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Warehouse_ID" Type="Int32" Nullable="false" />
+    <Property Name="Account_ID" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="MoneyPaid" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="AmountOwn" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MoreInfo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <NavigationProperty Name="ACCOUNT" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_ACCOUNTS" FromRole="GOODS_RECEIVED_NOTE" ToRole="ACCOUNT" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE_DETAILS" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS_GOODS_RECEIVED_NOTE" FromRole="GOODS_RECEIVED_NOTE" ToRole="GOODS_RECEIVED_NOTE_DETAILS" />
+    <NavigationProperty Name="Warehouse" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_WAREHOUSE" FromRole="GOODS_RECEIVED_NOTE" ToRole="Warehouse" />
+    <NavigationProperty Name="SHIPMENT_OF_GOODS" Relationship="SWareDBModel.FK_SHIPMENT_OF_GOODS_GOODS_RECEIVED_NOTE" FromRole="GOODS_RECEIVED_NOTE" ToRole="SHIPMENT_OF_GOODS" />
+  </EntityType>
+  <EntityType Name="GOODS_RECEIVED_NOTE_DETAILS">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="GRN_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="GRN_ID" Type="Int32" Nullable="false" />
+    <Property Name="Supplier_id" Type="Int32" Nullable="false" />
+    <Property Name="Quantity_of_request" Type="Int32" />
+    <Property Name="Actual_Amount" Type="Int32" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS_GOODS_RECEIVED_NOTE" FromRole="GOODS_RECEIVED_NOTE_DETAILS" ToRole="GOODS_RECEIVED_NOTE" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS" FromRole="GOODS_RECEIVED_NOTE_DETAILS" ToRole="PRODUCT" />
+    <NavigationProperty Name="SUPPLIER" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_SUPPLIERS" FromRole="GOODS_RECEIVED_NOTE_DETAILS" ToRole="SUPPLIER" />
+  </EntityType>
+  <EntityType Name="MATERIAL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialName" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UNITs" Relationship="SWareDBModel.FK_UNIT_Material" FromRole="MATERIAL" ToRole="UNIT" />
+  </EntityType>
+  <EntityType Name="ORDER_DETAILS">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Order_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Order_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="ORDER" Relationship="SWareDBModel.FK_ORDER_DETAILS_ORDERS" FromRole="ORDER_DETAILS" ToRole="ORDER" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_ORDER_DETAILS_PRODUCTS" FromRole="ORDER_DETAILS" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="ORDER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_ID" Type="Int32" Nullable="false" />
+    <Property Name="Account_ID" Type="Int32" Nullable="false" />
+    <Property Name="Input_Money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Output_Money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ActualTimePay" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="ACCOUNT" Relationship="SWareDBModel.FK_ORDERS_ACCOUNTS" FromRole="ORDER" ToRole="ACCOUNT" />
+    <NavigationProperty Name="CUSTOMER" Relationship="SWareDBModel.FK_ORDERS_CUSTOMERS" FromRole="ORDER" ToRole="CUSTOMER" />
+    <NavigationProperty Name="ORDER_DETAILS" Relationship="SWareDBModel.FK_ORDER_DETAILS_ORDERS" FromRole="ORDER" ToRole="ORDER_DETAILS" />
+  </EntityType>
+  <EntityType Name="PRODUCT_STORE">
+    <Key>
+      <PropertyRef Name="Store_id" />
+      <PropertyRef Name="Product_id" />
+    </Key>
+    <Property Name="Store_id" Type="Int32" Nullable="false" />
+    <Property Name="Product_id" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_PRODUCT_STORE_PRODUCTS" FromRole="PRODUCT_STORE" ToRole="PRODUCT" />
+    <NavigationProperty Name="STORE" Relationship="SWareDBModel.FK_PRODUCT_STORE_STORES" FromRole="PRODUCT_STORE" ToRole="STORE" />
+  </EntityType>
+  <EntityType Name="PRODUCT_WAREHOUSE">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Warehouse_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Warehouse_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_PRODUCT_WAREHOUSE_PRODUCTS" FromRole="PRODUCT_WAREHOUSE" ToRole="PRODUCT" />
+    <NavigationProperty Name="Warehouse" Relationship="SWareDBModel.FK_PRODUCT_WAREHOUSE_WAREHOUSES" FromRole="PRODUCT_WAREHOUSE" ToRole="Warehouse" />
+  </EntityType>
+  <EntityType Name="PRODUCT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Unit_ID" Type="Int32" />
+    <Property Name="Color_ID" Type="Int32" />
+    <Property Name="Brand_ID" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ShortDescription" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="LongDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserManual" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="BRAND" Relationship="SWareDBModel.FK_PRODUCTS_BRANDS" FromRole="PRODUCT" ToRole="BRAND" />
+    <NavigationProperty Name="COLOR" Relationship="SWareDBModel.FK_PRODUCTS_COLOR" FromRole="PRODUCT" ToRole="COLOR" />
+    <NavigationProperty Name="DELIVERY_REQUEST_DETAILS" Relationship="SWareDBModel.FK_DELIVERY_REQUEST_DETAILS_PRODUCTS" FromRole="PRODUCT" ToRole="DELIVERY_REQUEST_DETAILS" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE_DETAILS" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_DETAILS_PRODUCTS" FromRole="PRODUCT" ToRole="GOODS_DELIVERY_NOTE_DETAILS" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE_DETAILS" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS" FromRole="PRODUCT" ToRole="GOODS_RECEIVED_NOTE_DETAILS" />
+    <NavigationProperty Name="ORDER_DETAILS" Relationship="SWareDBModel.FK_ORDER_DETAILS_PRODUCTS" FromRole="PRODUCT" ToRole="ORDER_DETAILS" />
+    <NavigationProperty Name="PRODUCT_STORE" Relationship="SWareDBModel.FK_PRODUCT_STORE_PRODUCTS" FromRole="PRODUCT" ToRole="PRODUCT_STORE" />
+    <NavigationProperty Name="PRODUCT_WAREHOUSE" Relationship="SWareDBModel.FK_PRODUCT_WAREHOUSE_PRODUCTS" FromRole="PRODUCT" ToRole="PRODUCT_WAREHOUSE" />
+    <NavigationProperty Name="UNIT" Relationship="SWareDBModel.FK_PRODUCTS_UNIT" FromRole="PRODUCT" ToRole="UNIT" />
+    <NavigationProperty Name="SHIPMENT_OF_GOODS" Relationship="SWareDBModel.FK_SHIPMENT_OF_GOODS_PRODUCTS" FromRole="PRODUCT" ToRole="SHIPMENT_OF_GOODS" />
+    <NavigationProperty Name="SUPPLIERS" Relationship="SWareDBModel.PRODUCT_SUPPLIER" FromRole="PRODUCT" ToRole="SUPPLIER" />
+    <NavigationProperty Name="TYPE_OF_CATEGORY" Relationship="SWareDBModel.TYPE_OF_PRODUCT" FromRole="PRODUCT" ToRole="TYPE_OF_CATEGORY" />
+  </EntityType>
+  <EntityType Name="ROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="ACCOUNTS" Relationship="SWareDBModel.FK_ACCOUNT_ROLE" FromRole="ROLE" ToRole="ACCOUNT" />
+  </EntityType>
+  <EntityType Name="SHIPMENT_OF_GOODS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRN_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="EXP" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE" Relationship="SWareDBModel.FK_SHIPMENT_OF_GOODS_GOODS_RECEIVED_NOTE" FromRole="SHIPMENT_OF_GOODS" ToRole="GOODS_RECEIVED_NOTE" />
+    <NavigationProperty Name="PRODUCT" Relationship="SWareDBModel.FK_SHIPMENT_OF_GOODS_PRODUCTS" FromRole="SHIPMENT_OF_GOODS" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="SIZE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Size1" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UNITs" Relationship="SWareDBModel.FK_UNIT_SIZE" FromRole="SIZE" ToRole="UNIT" />
+  </EntityType>
+  <EntityType Name="STAFF_STORE">
+    <Key>
+      <PropertyRef Name="Store_id" />
+      <PropertyRef Name="Staff_id" />
+    </Key>
+    <Property Name="Store_id" Type="Int32" Nullable="false" />
+    <Property Name="Staff_id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="STAFF" Relationship="SWareDBModel.FK_STAFF_STORE_STAFFS" FromRole="STAFF_STORE" ToRole="STAFF" />
+    <NavigationProperty Name="STORE" Relationship="SWareDBModel.FK_STAFF_STORE_STORES" FromRole="STAFF_STORE" ToRole="STORE" />
+  </EntityType>
+  <EntityType Name="STAFF_WAREHOUSE">
+    <Key>
+      <PropertyRef Name="Warehouse_id" />
+      <PropertyRef Name="Staff_id" />
+    </Key>
+    <Property Name="Warehouse_id" Type="Int32" Nullable="false" />
+    <Property Name="Staff_id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="STAFF" Relationship="SWareDBModel.FK_STAFF_WAREHOUSE_STAFFS" FromRole="STAFF_WAREHOUSE" ToRole="STAFF" />
+    <NavigationProperty Name="Warehouse" Relationship="SWareDBModel.FK_STAFF_WAREHOUSE_WAREHOUSES" FromRole="STAFF_WAREHOUSE" ToRole="Warehouse" />
+  </EntityType>
+  <EntityType Name="STAFF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="ACCOUNTS" Relationship="SWareDBModel.FK_ACCOUNT_STAFFS" FromRole="STAFF" ToRole="ACCOUNT" />
+    <NavigationProperty Name="STAFF_STORE" Relationship="SWareDBModel.FK_STAFF_STORE_STAFFS" FromRole="STAFF" ToRole="STAFF_STORE" />
+    <NavigationProperty Name="STAFF_WAREHOUSE" Relationship="SWareDBModel.FK_STAFF_WAREHOUSE_STAFFS" FromRole="STAFF" ToRole="STAFF_WAREHOUSE" />
+  </EntityType>
+  <EntityType Name="STORE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Boolean" />
+    <NavigationProperty Name="DELIVERY_REQUESTS" Relationship="SWareDBModel.FK_DELIVERY_REQUESTS_STORES" FromRole="STORE" ToRole="DELIVERY_REQUESTS" />
+    <NavigationProperty Name="PRODUCT_STORE" Relationship="SWareDBModel.FK_PRODUCT_STORE_STORES" FromRole="STORE" ToRole="PRODUCT_STORE" />
+    <NavigationProperty Name="STAFF_STORE" Relationship="SWareDBModel.FK_STAFF_STORE_STORES" FromRole="STORE" ToRole="STAFF_STORE" />
+  </EntityType>
+  <EntityType Name="SUPPLIER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Moreinfo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ContractDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE_DETAILS" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_DETAILS_SUPPLIERS" FromRole="SUPPLIER" ToRole="GOODS_RECEIVED_NOTE_DETAILS" />
+    <NavigationProperty Name="PRODUCTS" Relationship="SWareDBModel.PRODUCT_SUPPLIER" FromRole="SUPPLIER" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="TYPE_OF_CATEGORY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_ID" Type="Int32" Nullable="false" />
+    <Property Name="TOC_Name" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CATEGORy" Relationship="SWareDBModel.FK_TYPE_OF_CATEGORY_CATEGORIES" FromRole="TYPE_OF_CATEGORY" ToRole="CATEGORy" />
+    <NavigationProperty Name="PRODUCTS" Relationship="SWareDBModel.TYPE_OF_PRODUCT" FromRole="TYPE_OF_CATEGORY" ToRole="PRODUCT" />
+  </EntityType>
+  <EntityType Name="UNIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="String" Nullable="false" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Material_ID" Type="Int32" Nullable="false" />
+    <Property Name="Size_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MATERIAL" Relationship="SWareDBModel.FK_UNIT_Material" FromRole="UNIT" ToRole="MATERIAL" />
+    <NavigationProperty Name="PRODUCTS" Relationship="SWareDBModel.FK_PRODUCTS_UNIT" FromRole="UNIT" ToRole="PRODUCT" />
+    <NavigationProperty Name="SIZE" Relationship="SWareDBModel.FK_UNIT_SIZE" FromRole="UNIT" ToRole="SIZE" />
+  </EntityType>
+  <EntityType Name="Warehouse">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="GOODS_DELIVERY_NOTE" Relationship="SWareDBModel.FK_GOODS_DELIVERY_NOTE_WAREHOUSE" FromRole="Warehouse" ToRole="GOODS_DELIVERY_NOTE" />
+    <NavigationProperty Name="GOODS_RECEIVED_NOTE" Relationship="SWareDBModel.FK_GOODS_RECEIVED_NOTE_WAREHOUSE" FromRole="Warehouse" ToRole="GOODS_RECEIVED_NOTE" />
+    <NavigationProperty Name="PRODUCT_WAREHOUSE" Relationship="SWareDBModel.FK_PRODUCT_WAREHOUSE_WAREHOUSES" FromRole="Warehouse" ToRole="PRODUCT_WAREHOUSE" />
+    <NavigationProperty Name="STAFF_WAREHOUSE" Relationship="SWareDBModel.FK_STAFF_WAREHOUSE_WAREHOUSES" FromRole="Warehouse" ToRole="STAFF_WAREHOUSE" />
+  </EntityType>
+  <Association Name="FK_ACCOUNT_ROLE">
+    <End Type="SWareDBModel.ROLE" Role="ROLE" Multiplicity="1" />
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ACCOUNT">
+        <PropertyRef Name="Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ACCOUNT_STAFFS">
+    <End Type="SWareDBModel.STAFF" Role="STAFF" Multiplicity="1" />
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STAFF">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ACCOUNT">
+        <PropertyRef Name="Staff_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DELIVERY_REQUESTS_ACCOUNTS">
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="1" />
+    <End Type="SWareDBModel.DELIVERY_REQUESTS" Role="DELIVERY_REQUESTS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DELIVERY_REQUESTS">
+        <PropertyRef Name="Account_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_DELIVERY_NOTE_ACCOUNTS">
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE" Role="GOODS_DELIVERY_NOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_DELIVERY_NOTE">
+        <PropertyRef Name="Account_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_RECEIVED_NOTE_ACCOUNTS">
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE" Role="GOODS_RECEIVED_NOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_RECEIVED_NOTE">
+        <PropertyRef Name="Account_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERS_ACCOUNTS">
+    <End Type="SWareDBModel.ACCOUNT" Role="ACCOUNT" Multiplicity="1" />
+    <End Type="SWareDBModel.ORDER" Role="ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ORDER">
+        <PropertyRef Name="Account_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_BRANDS">
+    <End Type="SWareDBModel.BRAND" Role="BRAND" Multiplicity="0..1" />
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TYPE_OF_CATEGORY_CATEGORIES">
+    <End Type="SWareDBModel.CATEGORy" Role="CATEGORy" Multiplicity="1" />
+    <End Type="SWareDBModel.TYPE_OF_CATEGORY" Role="TYPE_OF_CATEGORY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORy">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TYPE_OF_CATEGORY">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_COLOR">
+    <End Type="SWareDBModel.COLOR" Role="COLOR" Multiplicity="0..1" />
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="COLOR">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT">
+        <PropertyRef Name="Color_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDERS_CUSTOMERS">
+    <End Type="SWareDBModel.CUSTOMER" Role="CUSTOMER" Multiplicity="1" />
+    <End Type="SWareDBModel.ORDER" Role="ORDER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUSTOMER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ORDER">
+        <PropertyRef Name="Customer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DELIVERY_REQUEST_DETAILS_DELIVERY_REQUESTS">
+    <End Type="SWareDBModel.DELIVERY_REQUESTS" Role="DELIVERY_REQUESTS" Multiplicity="1" />
+    <End Type="SWareDBModel.DELIVERY_REQUEST_DETAILS" Role="DELIVERY_REQUEST_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DELIVERY_REQUESTS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DELIVERY_REQUEST_DETAILS">
+        <PropertyRef Name="Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DELIVERY_REQUEST_DETAILS_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.DELIVERY_REQUEST_DETAILS" Role="DELIVERY_REQUEST_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DELIVERY_REQUEST_DETAILS">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DELIVERY_REQUESTS_STORES">
+    <End Type="SWareDBModel.STORE" Role="STORE" Multiplicity="1" />
+    <End Type="SWareDBModel.DELIVERY_REQUESTS" Role="DELIVERY_REQUESTS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STORE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DELIVERY_REQUESTS">
+        <PropertyRef Name="Store_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_DELIVERY_NOTE_DELIVERY_REQUESTS">
+    <End Type="SWareDBModel.DELIVERY_REQUESTS" Role="DELIVERY_REQUESTS" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE" Role="GOODS_DELIVERY_NOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DELIVERY_REQUESTS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_DELIVERY_NOTE">
+        <PropertyRef Name="Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_DELIVERY_NOTE_DETAILS_GOODS_DELIVERY_NOTE">
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE" Role="GOODS_DELIVERY_NOTE" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE_DETAILS" Role="GOODS_DELIVERY_NOTE_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GOODS_DELIVERY_NOTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_DELIVERY_NOTE_DETAILS">
+        <PropertyRef Name="GDN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_DELIVERY_NOTE_WAREHOUSE">
+    <End Type="SWareDBModel.Warehouse" Role="Warehouse" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE" Role="GOODS_DELIVERY_NOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_DELIVERY_NOTE">
+        <PropertyRef Name="Warehouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_DELIVERY_NOTE_DETAILS_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_DELIVERY_NOTE_DETAILS" Role="GOODS_DELIVERY_NOTE_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_DELIVERY_NOTE_DETAILS">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS_GOODS_RECEIVED_NOTE">
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE" Role="GOODS_RECEIVED_NOTE" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE_DETAILS" Role="GOODS_RECEIVED_NOTE_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GOODS_RECEIVED_NOTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_RECEIVED_NOTE_DETAILS">
+        <PropertyRef Name="GRN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_RECEIVED_NOTE_WAREHOUSE">
+    <End Type="SWareDBModel.Warehouse" Role="Warehouse" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE" Role="GOODS_RECEIVED_NOTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_RECEIVED_NOTE">
+        <PropertyRef Name="Warehouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIPMENT_OF_GOODS_GOODS_RECEIVED_NOTE">
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE" Role="GOODS_RECEIVED_NOTE" Multiplicity="1" />
+    <End Type="SWareDBModel.SHIPMENT_OF_GOODS" Role="SHIPMENT_OF_GOODS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GOODS_RECEIVED_NOTE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SHIPMENT_OF_GOODS">
+        <PropertyRef Name="GRN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_RECEIVED_NOTE_DETAILS_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE_DETAILS" Role="GOODS_RECEIVED_NOTE_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_RECEIVED_NOTE_DETAILS">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GOODS_RECEIVED_NOTE_DETAILS_SUPPLIERS">
+    <End Type="SWareDBModel.SUPPLIER" Role="SUPPLIER" Multiplicity="1" />
+    <End Type="SWareDBModel.GOODS_RECEIVED_NOTE_DETAILS" Role="GOODS_RECEIVED_NOTE_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUPPLIER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GOODS_RECEIVED_NOTE_DETAILS">
+        <PropertyRef Name="Supplier_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIT_Material">
+    <End Type="SWareDBModel.MATERIAL" Role="MATERIAL" Multiplicity="1" />
+    <End Type="SWareDBModel.UNIT" Role="UNIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MATERIAL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UNIT">
+        <PropertyRef Name="Material_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDER_DETAILS_ORDERS">
+    <End Type="SWareDBModel.ORDER" Role="ORDER" Multiplicity="1" />
+    <End Type="SWareDBModel.ORDER_DETAILS" Role="ORDER_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ORDER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ORDER_DETAILS">
+        <PropertyRef Name="Order_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ORDER_DETAILS_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.ORDER_DETAILS" Role="ORDER_DETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ORDER_DETAILS">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCT_STORE_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.PRODUCT_STORE" Role="PRODUCT_STORE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT_STORE">
+        <PropertyRef Name="Product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCT_STORE_STORES">
+    <End Type="SWareDBModel.STORE" Role="STORE" Multiplicity="1" />
+    <End Type="SWareDBModel.PRODUCT_STORE" Role="PRODUCT_STORE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STORE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT_STORE">
+        <PropertyRef Name="Store_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCT_WAREHOUSE_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.PRODUCT_WAREHOUSE" Role="PRODUCT_WAREHOUSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT_WAREHOUSE">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCT_WAREHOUSE_WAREHOUSES">
+    <End Type="SWareDBModel.Warehouse" Role="Warehouse" Multiplicity="1" />
+    <End Type="SWareDBModel.PRODUCT_WAREHOUSE" Role="PRODUCT_WAREHOUSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT_WAREHOUSE">
+        <PropertyRef Name="Warehouse_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUCTS_UNIT">
+    <End Type="SWareDBModel.UNIT" Role="UNIT" Multiplicity="0..1" />
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNIT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PRODUCT">
+        <PropertyRef Name="Unit_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SHIPMENT_OF_GOODS_PRODUCTS">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="1" />
+    <End Type="SWareDBModel.SHIPMENT_OF_GOODS" Role="SHIPMENT_OF_GOODS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUCT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SHIPMENT_OF_GOODS">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNIT_SIZE">
+    <End Type="SWareDBModel.SIZE" Role="SIZE" Multiplicity="1" />
+    <End Type="SWareDBModel.UNIT" Role="UNIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SIZE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UNIT">
+        <PropertyRef Name="Size_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STAFF_STORE_STAFFS">
+    <End Type="SWareDBModel.STAFF" Role="STAFF" Multiplicity="1" />
+    <End Type="SWareDBModel.STAFF_STORE" Role="STAFF_STORE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STAFF">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="STAFF_STORE">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STAFF_STORE_STORES">
+    <End Type="SWareDBModel.STORE" Role="STORE" Multiplicity="1" />
+    <End Type="SWareDBModel.STAFF_STORE" Role="STAFF_STORE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STORE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="STAFF_STORE">
+        <PropertyRef Name="Store_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STAFF_WAREHOUSE_STAFFS">
+    <End Type="SWareDBModel.STAFF" Role="STAFF" Multiplicity="1" />
+    <End Type="SWareDBModel.STAFF_WAREHOUSE" Role="STAFF_WAREHOUSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STAFF">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="STAFF_WAREHOUSE">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_STAFF_WAREHOUSE_WAREHOUSES">
+    <End Type="SWareDBModel.Warehouse" Role="Warehouse" Multiplicity="1" />
+    <End Type="SWareDBModel.STAFF_WAREHOUSE" Role="STAFF_WAREHOUSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Warehouse">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="STAFF_WAREHOUSE">
+        <PropertyRef Name="Warehouse_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRODUCT_SUPPLIER">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="*" />
+    <End Type="SWareDBModel.SUPPLIER" Role="SUPPLIER" Multiplicity="*" />
+  </Association>
+  <Association Name="TYPE_OF_PRODUCT">
+    <End Type="SWareDBModel.PRODUCT" Role="PRODUCT" Multiplicity="*" />
+    <End Type="SWareDBModel.TYPE_OF_CATEGORY" Role="TYPE_OF_CATEGORY" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="SP_CountProReceivedByNameInDay_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="DateTime" Name="Day" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_CountProReceivedByNameInMonth_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="Int32" Name="Month" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_CountProReceivedByNameInQuarter_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Quarter" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_CountProReceivedByNameInWeek_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Week" Nullable="true" MaxLength="7" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllAccountIdAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllCustomer_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllCustomerIdAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="55" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetAllDR_Result">
+    <Property Type="Int32" Name="RequestID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Store_ID" Nullable="false" />
+    <Property Type="String" Name="StoreName" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="DRCreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DRMoreInfo" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="DRStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetAllDRDetailByID_Result">
+    <Property Type="Int32" Name="Product_ID" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllGDN_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="Warehouse_ID" Nullable="false" />
+    <Property Type="String" Name="WarehouseName" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="Request_ID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllOrder_Result">
+    <Property Type="Int32" Name="orderId" Nullable="false" />
+    <Property Type="Int32" Name="customerId" Nullable="false" />
+    <Property Type="Int32" Name="accountId" Nullable="false" />
+    <Property Type="String" Name="customerName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ActualTimePay" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Input_Money" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="Output_Money" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+    <Property Type="Boolean" Name="OrderStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllOrderDetailByOrderId_Result">
+    <Property Type="Int32" Name="Order_id" Nullable="false" />
+    <Property Type="Int32" Name="Product_ID" Nullable="false" />
+    <Property Type="String" Name="Product_Name" Nullable="false" MaxLength="55" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllProduct_Result">
+    <Property Type="String" Name="Product_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UnitName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Material_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Size" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="ColorName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Brand_Name" Nullable="false" MaxLength="55" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="ShortDescription" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="LongDescription" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UserManual" Nullable="true" MaxLength="200" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllSupplier_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Phone" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="Moreinfo" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ContractDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_getAllSupplierIDAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_getAllWarehouseIDAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="55" />
+  </ComplexType>
+  <ComplexType Name="SP_GetBrandIdAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="55" />
+  </ComplexType>
+  <ComplexType Name="SP_GetColorIdAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="55" />
+  </ComplexType>
+  <ComplexType Name="SP_GetCustomerByString_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetGDNDetailById_Result">
+    <Property Type="Int32" Name="Product_ID" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="Quantity_of_request" Nullable="true" />
+    <Property Type="Int32" Name="Actual_Amount" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetGRNDetailByGRNID_Result">
+    <Property Type="Int32" Name="Product_ID" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="Supplier_id" Nullable="false" />
+    <Property Type="String" Name="SupplierName" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="Quantity_of_request" Nullable="true" />
+    <Property Type="Int32" Name="Actual_Amount" Nullable="true" />
+    <Property Type="Decimal" Name="Cost" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="SP_GetOrderByID_Result">
+    <Property Type="Int32" Name="order_id" Nullable="false" />
+    <Property Type="String" Name="customer_name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="userName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Customer_ID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="Decimal" Name="Input_Money" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="Output_Money" Nullable="true" Precision="19" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ActualTimePay" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductById_Result">
+    <Property Type="String" Name="Product_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UnitName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Material_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Size" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="ColorName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Brand_Name" Nullable="false" MaxLength="55" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="ShortDescription" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="LongDescription" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UserManual" Nullable="true" MaxLength="200" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequestByID_Result">
+    <Property Type="Int32" Name="request_id" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="Int32" Name="Store_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Store_name" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Moreinfo" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequestByString_Result">
+    <Property Type="Int32" Name="request_id" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="Int32" Name="Store_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Store_name" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Moreinfo" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRoleIdAndName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="55" />
+  </ComplexType>
+  <ComplexType Name="SP_GetStaffById_Result">
+    <Property Type="Int32" Name="StaID" Nullable="false" />
+    <Property Type="String" Name="StaffName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Salary" Nullable="true" Precision="19" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetUnitIdAndName_Result">
+    <Property Type="Int32" Name="UnitId" Nullable="false" />
+    <Property Type="String" Name="UnitName" Nullable="false" MaxLength="167" />
+  </ComplexType>
+  <ComplexType Name="SP_Login_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="Staff_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PassWord" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DisplayName" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="Role_ID" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SearchGDNByString_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="Warehouse_ID" Nullable="false" />
+    <Property Type="String" Name="WarehouseName" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="Request_ID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SearchOrderByString_Result">
+    <Property Type="Int32" Name="orderId" Nullable="false" />
+    <Property Type="Int32" Name="customerId" Nullable="false" />
+    <Property Type="Int32" Name="accountId" Nullable="false" />
+    <Property Type="String" Name="customerName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="actualtimePay" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Input_Money" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="Output_Money" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+    <Property Type="Boolean" Name="OrderStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SearchSupplier_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Phone" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="Moreinfo" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ContractDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetInMoneyByOrderInQuarter_Result">
+    <Property Type="Decimal" Name="TongThu" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Customer_name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Quarter" Nullable="true" MaxLength="37" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetInMoneyByOrderInWeek_Result">
+    <Property Type="Decimal" Name="TongThu" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Customer_Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Week" Nullable="true" MaxLength="34" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetMoneyOutByGRNInMonth_Result">
+    <Property Type="Decimal" Name="TongChi" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Supplier_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Month" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetMoneyOutByGRNInQuarter_Result">
+    <Property Type="Decimal" Name="TongChi" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Supplier_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Quarter" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetMoneyOutByGRNInWeek_Result">
+    <Property Type="Decimal" Name="TongChi" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Supplier_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Week" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductByString_Result">
+    <Property Type="String" Name="Product_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UnitName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Material_Name" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="Size" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="ColorName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Brand_Name" Nullable="false" MaxLength="55" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="ShortDescription" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="LongDescription" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UserManual" Nullable="true" MaxLength="200" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductOutInDay_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="Day" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductOutInMonth_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Month" Nullable="true" MaxLength="8" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductOutInQuarter_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Week" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductOutInWeek_Result">
+    <Property Type="String" Name="Product" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="QuantityOfProduct" Nullable="true" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Week" Nullable="true" MaxLength="7" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetInMoneyByOrderInMonth_Result">
+    <Property Type="Decimal" Name="TongThu" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Customer_Name" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="Month" Nullable="true" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllGRN_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="Warehouse_ID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MoreInfo" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="MoneyPaid" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="AmountOwn" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="Status" Nullable="true" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="CountProduct" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetCustomerStatistical_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductInStatistical_Result">
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="279" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Unit" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="SupplierName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Cost" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="String" Name="WarhouseReceived" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="InputDay" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductOutStatistical_Result">
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="279" />
+    <Property Type="String" Name="Code" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Unit" Nullable="false" MaxLength="55" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="String" Name="WarehouseExport" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="StoreReceived" Nullable="true" MaxLength="55" />
+    <Property Type="DateTime" Name="OutputDay" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductStatistical_Result">
+    <Property Type="Int32" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="279" />
+    <Property Type="String" Name="BrandName" Nullable="false" MaxLength="55" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SearchGRNByString_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="Warehouse_ID" Nullable="false" />
+    <Property Type="Int32" Name="Account_ID" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MoreInfo" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="MoneyPaid" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="AmountOwn" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="Status" Nullable="true" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Warehouse_Name" Nullable="true" MaxLength="55" />
+    <Property Type="Int32" Name="CountProduct" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductIdAndName_Result">
+    <Property Type="String" Name="Product_Name" Nullable="true" MaxLength="279" />
+    <Property Type="Int32" Name="productId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_getAllProductIDAndName_Result">
+    <Property Type="String" Name="Product_Name" Nullable="true" MaxLength="279" />
+    <Property Type="Int32" Name="productId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllUnDoneRequest_Result">
+    <Property Type="Int32" Name="RequestId" Nullable="false" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="70" />
+  </ComplexType>
+  <ComplexType Name="SP_GetRequestDetailByRequestID_Result">
+    <Property Type="Int32" Name="Product_ID" Nullable="false" />
+    <Property Type="Int32" Name="Request_ID" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAllStaff_Result">
+    <Property Type="Int32" Name="StaID" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="StaffName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Salary" Nullable="true" Precision="19" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_SearchStaffByString_Result">
+    <Property Type="Int32" Name="StaID" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="true" MaxLength="55" />
+    <Property Type="String" Name="StaffName" Nullable="false" MaxLength="55" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Salary" Nullable="true" Precision="19" />
+    <Property Type="Binary" Name="Image" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_GetAmountOwn_Result">
+    <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="MoneyPaid" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="SP_GetProductQuantityInWarehouse_Result">
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+  </ComplexType>
+</Schema>

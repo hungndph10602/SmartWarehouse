@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWarehouse", "SWarehouse.csproj", "{F43F3C8C-5860-4FAA-88A0-3600F82829AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewAutoFilter", "..\DataGridViewAutoFilter\DataGridViewAutoFilter.csproj", "{5A4B4B14-D3B5-4D54-80EC-0877C1E6E73A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F43F3C8C-5860-4FAA-88A0-3600F82829AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43F3C8C-5860-4FAA-88A0-3600F82829AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43F3C8C-5860-4FAA-88A0-3600F82829AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43F3C8C-5860-4FAA-88A0-3600F82829AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4B4B14-D3B5-4D54-80EC-0877C1E6E73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4B4B14-D3B5-4D54-80EC-0877C1E6E73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4B4B14-D3B5-4D54-80EC-0877C1E6E73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4B4B14-D3B5-4D54-80EC-0877C1E6E73A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D414248A-5436-4B06-AF29-B9172F4DE8DD}
+	EndGlobalSection
+EndGlobal

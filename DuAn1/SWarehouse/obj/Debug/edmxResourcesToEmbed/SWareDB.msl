@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SWareDBModelStoreContainer" CdmEntityContainer="SWareDBEntities">
+    <EntitySetMapping Name="ACCOUNTS">
+      <EntityTypeMapping TypeName="SWareDBModel.ACCOUNT">
+        <MappingFragment StoreEntitySet="ACCOUNTS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRANDS">
+      <EntityTypeMapping TypeName="SWareDBModel.BRAND">
+        <MappingFragment StoreEntitySet="BRANDS">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CATEGORIES">
+      <EntityTypeMapping TypeName="SWareDBModel.CATEGORy">
+        <MappingFragment StoreEntitySet="CATEGORIES">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLORs">
+      <EntityTypeMapping TypeName="SWareDBModel.COLOR">
+        <MappingFragment StoreEntitySet="COLOR">
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CUSTOMERS">
+      <EntityTypeMapping TypeName="SWareDBModel.CUSTOMER">
+        <MappingFragment StoreEntitySet="CUSTOMERS">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DELIVERY_REQUEST_DETAILS">
+      <EntityTypeMapping TypeName="SWareDBModel.DELIVERY_REQUEST_DETAILS">
+        <MappingFragment StoreEntitySet="DELIVERY_REQUEST_DETAILS">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DELIVERY_REQUESTS">
+      <EntityTypeMapping TypeName="SWareDBModel.DELIVERY_REQUESTS">
+        <MappingFragment StoreEntitySet="DELIVERY_REQUESTS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Store_ID" ColumnName="Store_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOODS_DELIVERY_NOTE">
+      <EntityTypeMapping TypeName="SWareDBModel.GOODS_DELIVERY_NOTE">
+        <MappingFragment StoreEntitySet="GOODS_DELIVERY_NOTE">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOODS_DELIVERY_NOTE_DETAILS">
+      <EntityTypeMapping TypeName="SWareDBModel.GOODS_DELIVERY_NOTE_DETAILS">
+        <MappingFragment StoreEntitySet="GOODS_DELIVERY_NOTE_DETAILS">
+          <ScalarProperty Name="Actual_Amount" ColumnName="Actual_Amount" />
+          <ScalarProperty Name="Quantity_of_request" ColumnName="Quantity_of_request" />
+          <ScalarProperty Name="GDN_ID" ColumnName="GDN_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOODS_RECEIVED_NOTE">
+      <EntityTypeMapping TypeName="SWareDBModel.GOODS_RECEIVED_NOTE">
+        <MappingFragment StoreEntitySet="GOODS_RECEIVED_NOTE">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="AmountOwn" ColumnName="AmountOwn" />
+          <ScalarProperty Name="MoneyPaid" ColumnName="MoneyPaid" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOODS_RECEIVED_NOTE_DETAILS">
+      <EntityTypeMapping TypeName="SWareDBModel.GOODS_RECEIVED_NOTE_DETAILS">
+        <MappingFragment StoreEntitySet="GOODS_RECEIVED_NOTE_DETAILS">
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Actual_Amount" ColumnName="Actual_Amount" />
+          <ScalarProperty Name="Quantity_of_request" ColumnName="Quantity_of_request" />
+          <ScalarProperty Name="Supplier_id" ColumnName="Supplier_id" />
+          <ScalarProperty Name="GRN_ID" ColumnName="GRN_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATERIALs">
+      <EntityTypeMapping TypeName="SWareDBModel.MATERIAL">
+        <MappingFragment StoreEntitySet="MATERIAL">
+          <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDER_DETAILS">
+      <EntityTypeMapping TypeName="SWareDBModel.ORDER_DETAILS">
+        <MappingFragment StoreEntitySet="ORDER_DETAILS">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ORDERS">
+      <EntityTypeMapping TypeName="SWareDBModel.ORDER">
+        <MappingFragment StoreEntitySet="ORDERS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ActualTimePay" ColumnName="ActualTimePay" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Output_Money" ColumnName="Output_Money" />
+          <ScalarProperty Name="Input_Money" ColumnName="Input_Money" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCT_STORE">
+      <EntityTypeMapping TypeName="SWareDBModel.PRODUCT_STORE">
+        <MappingFragment StoreEntitySet="PRODUCT_STORE">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="Store_id" ColumnName="Store_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCT_WAREHOUSE">
+      <EntityTypeMapping TypeName="SWareDBModel.PRODUCT_WAREHOUSE">
+        <MappingFragment StoreEntitySet="PRODUCT_WAREHOUSE">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTS">
+      <EntityTypeMapping TypeName="SWareDBModel.PRODUCT">
+        <MappingFragment StoreEntitySet="PRODUCTS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserManual" ColumnName="UserManual" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="Color_ID" ColumnName="Color_ID" />
+          <ScalarProperty Name="Unit_ID" ColumnName="Unit_ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLEs">
+      <EntityTypeMapping TypeName="SWareDBModel.ROLE">
+        <MappingFragment StoreEntitySet="ROLE">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHIPMENT_OF_GOODS">
+      <EntityTypeMapping TypeName="SWareDBModel.SHIPMENT_OF_GOODS">
+        <MappingFragment StoreEntitySet="SHIPMENT_OF_GOODS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EXP" ColumnName="EXP" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="GRN_ID" ColumnName="GRN_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIZEs">
+      <EntityTypeMapping TypeName="SWareDBModel.SIZE">
+        <MappingFragment StoreEntitySet="SIZE">
+          <ScalarProperty Name="Size1" ColumnName="Size" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STAFF_STORE">
+      <EntityTypeMapping TypeName="SWareDBModel.STAFF_STORE">
+        <MappingFragment StoreEntitySet="STAFF_STORE">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Store_id" ColumnName="Store_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STAFF_WAREHOUSE">
+      <EntityTypeMapping TypeName="SWareDBModel.STAFF_WAREHOUSE">
+        <MappingFragment StoreEntitySet="STAFF_WAREHOUSE">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Warehouse_id" ColumnName="Warehouse_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STAFFS">
+      <EntityTypeMapping TypeName="SWareDBModel.STAFF">
+        <MappingFragment StoreEntitySet="STAFFS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STORES">
+      <EntityTypeMapping TypeName="SWareDBModel.STORE">
+        <MappingFragment StoreEntitySet="STORES">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPLIERS">
+      <EntityTypeMapping TypeName="SWareDBModel.SUPPLIER">
+        <MappingFragment StoreEntitySet="SUPPLIERS">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="Moreinfo" ColumnName="Moreinfo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TYPE_OF_CATEGORY">
+      <EntityTypeMapping TypeName="SWareDBModel.TYPE_OF_CATEGORY">
+        <MappingFragment StoreEntitySet="TYPE_OF_CATEGORY">
+          <ScalarProperty Name="TOC_Name" ColumnName="TOC_Name" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNITs">
+      <EntityTypeMapping TypeName="SWareDBModel.UNIT">
+        <MappingFragment StoreEntitySet="UNIT">
+          <ScalarProperty Name="Size_ID" ColumnName="Size_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WAREHOUSES">
+      <EntityTypeMapping TypeName="SWareDBModel.Warehouse">
+        <MappingFragment StoreEntitySet="WAREHOUSES">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PRODUCT_SUPPLIER" TypeName="SWareDBModel.PRODUCT_SUPPLIER" StoreEntitySet="PRODUCT_SUPPLIER">
+      <EndProperty Name="SUPPLIER">
+        <ScalarProperty Name="ID" ColumnName="Supplier_ID" />
+      </EndProperty>
+      <EndProperty Name="PRODUCT">
+        <ScalarProperty Name="ID" ColumnName="Product_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TYPE_OF_PRODUCT" TypeName="SWareDBModel.TYPE_OF_PRODUCT" StoreEntitySet="TYPE_OF_PRODUCT">
+      <EndProperty Name="TYPE_OF_CATEGORY">
+        <ScalarProperty Name="ID" ColumnName="TOC_ID" />
+      </EndProperty>
+      <EndProperty Name="PRODUCT">
+        <ScalarProperty Name="ID" ColumnName="ProductID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="SP_BreakPayOrder" FunctionName="SWareDBModel.Store.SP_BreakPayOrder" />
+    <FunctionImportMapping FunctionImportName="SP_ChangePassword" FunctionName="SWareDBModel.Store.SP_ChangePassword" />
+    <FunctionImportMapping FunctionImportName="SP_CheckValidUsername" FunctionName="SWareDBModel.Store.SP_CheckValidUsername" />
+    <FunctionImportMapping FunctionImportName="SP_CountProReceivedByNameInDay" FunctionName="SWareDBModel.Store.SP_CountProReceivedByNameInDay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_CountProReceivedByNameInDay_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CountProReceivedByNameInMonth" FunctionName="SWareDBModel.Store.SP_CountProReceivedByNameInMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_CountProReceivedByNameInMonth_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CountProReceivedByNameInQuarter" FunctionName="SWareDBModel.Store.SP_CountProReceivedByNameInQuarter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_CountProReceivedByNameInQuarter_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CountProReceivedByNameInWeek" FunctionName="SWareDBModel.Store.SP_CountProReceivedByNameInWeek">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_CountProReceivedByNameInWeek_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CreateAccount" FunctionName="SWareDBModel.Store.SP_CreateAccount" />
+    <FunctionImportMapping FunctionImportName="SP_CreateCustomer" FunctionName="SWareDBModel.Store.SP_CreateCustomer" />
+    <FunctionImportMapping FunctionImportName="SP_CreateDeliveryRequest" FunctionName="SWareDBModel.Store.SP_CreateDeliveryRequest" />
+    <FunctionImportMapping FunctionImportName="SP_CreateDeliveryRequestDetail" FunctionName="SWareDBModel.Store.SP_CreateDeliveryRequestDetail" />
+    <FunctionImportMapping FunctionImportName="SP_CreateGDN_Detail" FunctionName="SWareDBModel.Store.SP_CreateGDN_Detail" />
+    <FunctionImportMapping FunctionImportName="SP_CreateGRNDetail" FunctionName="SWareDBModel.Store.SP_CreateGRNDetail" />
+    <FunctionImportMapping FunctionImportName="SP_CreateOrderAdd" FunctionName="SWareDBModel.Store.SP_CreateOrderAdd" />
+    <FunctionImportMapping FunctionImportName="SP_CreateOrderDetail" FunctionName="SWareDBModel.Store.SP_CreateOrderDetail" />
+    <FunctionImportMapping FunctionImportName="SP_CreateProduct" FunctionName="SWareDBModel.Store.SP_CreateProduct" />
+    <FunctionImportMapping FunctionImportName="SP_CreateSupplier" FunctionName="SWareDBModel.Store.SP_CreateSupplier" />
+    <FunctionImportMapping FunctionImportName="SP_GetAllAccountIdAndName" FunctionName="SWareDBModel.Store.SP_GetAllAccountIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllAccountIdAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllCustomer" FunctionName="SWareDBModel.Store.SP_GetAllCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllCustomer_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllCustomerIdAndName" FunctionName="SWareDBModel.Store.SP_GetAllCustomerIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllCustomerIdAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetAllDR" FunctionName="SWareDBModel.Store.Sp_GetAllDR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.Sp_GetAllDR_Result">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Store_ID" ColumnName="Store_ID" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="DRCreateDate" ColumnName="DRCreateDate" />
+          <ScalarProperty Name="DRMoreInfo" ColumnName="DRMoreInfo" />
+          <ScalarProperty Name="DRStatus" ColumnName="DRStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Sp_GetAllDRDetailByID" FunctionName="SWareDBModel.Store.Sp_GetAllDRDetailByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.Sp_GetAllDRDetailByID_Result">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllGDN" FunctionName="SWareDBModel.Store.SP_GetAllGDN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllGDN_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllOrder" FunctionName="SWareDBModel.Store.SP_GetAllOrder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllOrder_Result">
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="accountId" ColumnName="accountId" />
+          <ScalarProperty Name="customerName" ColumnName="customerName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ActualTimePay" ColumnName="ActualTimePay" />
+          <ScalarProperty Name="Input_Money" ColumnName="Input_Money" />
+          <ScalarProperty Name="Output_Money" ColumnName="Output_Money" />
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllOrderDetailByOrderId" FunctionName="SWareDBModel.Store.SP_GetAllOrderDetailByOrderId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllOrderDetailByOrderId_Result">
+          <ScalarProperty Name="Order_id" ColumnName="Order_id" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllProduct" FunctionName="SWareDBModel.Store.SP_GetAllProduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllProduct_Result">
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="UserManual" ColumnName="UserManual" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllSupplier" FunctionName="SWareDBModel.Store.SP_GetAllSupplier">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllSupplier_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Moreinfo" ColumnName="Moreinfo" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_getAllSupplierIDAndName" FunctionName="SWareDBModel.Store.SP_getAllSupplierIDAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_getAllSupplierIDAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_getAllWarehouseIDAndName" FunctionName="SWareDBModel.Store.SP_getAllWarehouseIDAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_getAllWarehouseIDAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetBrandIdAndName" FunctionName="SWareDBModel.Store.SP_GetBrandIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetBrandIdAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetColorIdAndName" FunctionName="SWareDBModel.Store.SP_GetColorIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetColorIdAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetCustomerByString" FunctionName="SWareDBModel.Store.SP_GetCustomerByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetCustomerByString_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetGDNDetailById" FunctionName="SWareDBModel.Store.SP_GetGDNDetailById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetGDNDetailById_Result">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Quantity_of_request" ColumnName="Quantity_of_request" />
+          <ScalarProperty Name="Actual_Amount" ColumnName="Actual_Amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetGRNDetailByGRNID" FunctionName="SWareDBModel.Store.SP_GetGRNDetailByGRNID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetGRNDetailByGRNID_Result">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Supplier_id" ColumnName="Supplier_id" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Quantity_of_request" ColumnName="Quantity_of_request" />
+          <ScalarProperty Name="Actual_Amount" ColumnName="Actual_Amount" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetOrderByID" FunctionName="SWareDBModel.Store.SP_GetOrderByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetOrderByID_Result">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Input_Money" ColumnName="Input_Money" />
+          <ScalarProperty Name="Output_Money" ColumnName="Output_Money" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ActualTimePay" ColumnName="ActualTimePay" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductById" FunctionName="SWareDBModel.Store.SP_GetProductById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductById_Result">
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="UserManual" ColumnName="UserManual" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductQuantity" FunctionName="SWareDBModel.Store.SP_GetProductQuantity" />
+    <FunctionImportMapping FunctionImportName="SP_GetRequestByID" FunctionName="SWareDBModel.Store.SP_GetRequestByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetRequestByID_Result">
+          <ScalarProperty Name="request_id" ColumnName="request_id" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Store_ID" ColumnName="Store_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Store_name" ColumnName="Store_name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Moreinfo" ColumnName="Moreinfo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRequestByString" FunctionName="SWareDBModel.Store.SP_GetRequestByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetRequestByString_Result">
+          <ScalarProperty Name="request_id" ColumnName="request_id" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Store_ID" ColumnName="Store_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Store_name" ColumnName="Store_name" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Moreinfo" ColumnName="Moreinfo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRoleIdAndName" FunctionName="SWareDBModel.Store.SP_GetRoleIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetRoleIdAndName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetStaffById" FunctionName="SWareDBModel.Store.SP_GetStaffById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetStaffById_Result">
+          <ScalarProperty Name="StaID" ColumnName="StaID" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetTotalMoney" FunctionName="SWareDBModel.Store.SP_GetTotalMoney" />
+    <FunctionImportMapping FunctionImportName="SP_GetUnitIdAndName" FunctionName="SWareDBModel.Store.SP_GetUnitIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetUnitIdAndName_Result">
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Login" FunctionName="SWareDBModel.Store.SP_Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_Login_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Staff_ID" ColumnName="Staff_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_PayOrder" FunctionName="SWareDBModel.Store.SP_PayOrder" />
+    <FunctionImportMapping FunctionImportName="SP_SearchGDNByString" FunctionName="SWareDBModel.Store.SP_SearchGDNByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_SearchGDNByString_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SearchOrderByString" FunctionName="SWareDBModel.Store.SP_SearchOrderByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_SearchOrderByString_Result">
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="accountId" ColumnName="accountId" />
+          <ScalarProperty Name="customerName" ColumnName="customerName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="actualtimePay" ColumnName="actualtimePay" />
+          <ScalarProperty Name="Input_Money" ColumnName="Input_Money" />
+          <ScalarProperty Name="Output_Money" ColumnName="Output_Money" />
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SearchSupplier" FunctionName="SWareDBModel.Store.SP_SearchSupplier">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_SearchSupplier_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Moreinfo" ColumnName="Moreinfo" />
+          <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_UpdateDeliveryRequestStatus" FunctionName="SWareDBModel.Store.SP_UpdateDeliveryRequestStatus" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateGDNStatus" FunctionName="SWareDBModel.Store.SP_UpdateGDNStatus" />
+    <FunctionImportMapping FunctionImportName="SP_updateGRNStatus" FunctionName="SWareDBModel.Store.SP_updateGRNStatus" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateOrderProductQuantity" FunctionName="SWareDBModel.Store.SP_UpdateOrderProductQuantity" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateProduct" FunctionName="SWareDBModel.Store.SP_UpdateProduct" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateStaff" FunctionName="SWareDBModel.Store.SP_UpdateStaff" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateSupplier" FunctionName="SWareDBModel.Store.SP_UpdateSupplier" />
+    <FunctionImportMapping FunctionImportName="SP_GetInMoneyByOrderInQuarter" FunctionName="SWareDBModel.Store.SP_GetInMoneyByOrderInQuarter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetInMoneyByOrderInQuarter_Result">
+          <ScalarProperty Name="TongThu" ColumnName="TongThu" />
+          <ScalarProperty Name="Customer_name" ColumnName="Customer_name" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetInMoneyByOrderInWeek" FunctionName="SWareDBModel.Store.SP_GetInMoneyByOrderInWeek">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetInMoneyByOrderInWeek_Result">
+          <ScalarProperty Name="TongThu" ColumnName="TongThu" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetMoneyOutByGRNInMonth" FunctionName="SWareDBModel.Store.SP_GetMoneyOutByGRNInMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetMoneyOutByGRNInMonth_Result">
+          <ScalarProperty Name="TongChi" ColumnName="TongChi" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetMoneyOutByGRNInQuarter" FunctionName="SWareDBModel.Store.SP_GetMoneyOutByGRNInQuarter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetMoneyOutByGRNInQuarter_Result">
+          <ScalarProperty Name="TongChi" ColumnName="TongChi" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetMoneyOutByGRNInWeek" FunctionName="SWareDBModel.Store.SP_GetMoneyOutByGRNInWeek">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetMoneyOutByGRNInWeek_Result">
+          <ScalarProperty Name="TongChi" ColumnName="TongChi" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductByString" FunctionName="SWareDBModel.Store.SP_GetProductByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductByString_Result">
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
+          <ScalarProperty Name="UserManual" ColumnName="UserManual" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductOutInDay" FunctionName="SWareDBModel.Store.SP_GetProductOutInDay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductOutInDay_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductOutInMonth" FunctionName="SWareDBModel.Store.SP_GetProductOutInMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductOutInMonth_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductOutInQuarter" FunctionName="SWareDBModel.Store.SP_GetProductOutInQuarter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductOutInQuarter_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductOutInWeek" FunctionName="SWareDBModel.Store.SP_GetProductOutInWeek">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductOutInWeek_Result">
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="QuantityOfProduct" ColumnName="QuantityOfProduct" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetInMoneyByOrderInMonth" FunctionName="SWareDBModel.Store.SP_GetInMoneyByOrderInMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetInMoneyByOrderInMonth_Result">
+          <ScalarProperty Name="TongThu" ColumnName="TongThu" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetAllGRN" FunctionName="SWareDBModel.Store.SP_GetAllGRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllGRN_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+          <ScalarProperty Name="MoneyPaid" ColumnName="MoneyPaid" />
+          <ScalarProperty Name="AmountOwn" ColumnName="AmountOwn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="CountProduct" ColumnName="CountProduct" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetCustomerStatistical" FunctionName="SWareDBModel.Store.SP_GetCustomerStatistical">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetCustomerStatistical_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductInStatistical" FunctionName="SWareDBModel.Store.SP_GetProductInStatistical">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductInStatistical_Result">
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="WarhouseReceived" ColumnName="WarhouseReceived" />
+          <ScalarProperty Name="InputDay" ColumnName="InputDay" />
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductOutStatistical" FunctionName="SWareDBModel.Store.SP_GetProductOutStatistical">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductOutStatistical_Result">
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="WarehouseExport" ColumnName="WarehouseExport" />
+          <ScalarProperty Name="StoreReceived" ColumnName="StoreReceived" />
+          <ScalarProperty Name="OutputDay" ColumnName="OutputDay" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductStatistical" FunctionName="SWareDBModel.Store.SP_GetProductStatistical">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductStatistical_Result">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SearchGRNByString" FunctionName="SWareDBModel.Store.SP_SearchGRNByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_SearchGRNByString_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Warehouse_ID" ColumnName="Warehouse_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+          <ScalarProperty Name="MoneyPaid" ColumnName="MoneyPaid" />
+          <ScalarProperty Name="AmountOwn" ColumnName="AmountOwn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Warehouse_Name" ColumnName="Warehouse_Name" />
+          <ScalarProperty Name="CountProduct" ColumnName="CountProduct" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CreateStaff" FunctionName="SWareDBModel.Store.SP_CreateStaff" />
+    <FunctionImportMapping FunctionImportName="SP_GetProductIdAndName" FunctionName="SWareDBModel.Store.SP_GetProductIdAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductIdAndName_Result">
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_getAllProductIDAndName" FunctionName="SWareDBModel.Store.SP_getAllProductIDAndName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_getAllProductIDAndName_Result">
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DoneDeliveryRequest" FunctionName="SWareDBModel.Store.SP_DoneDeliveryRequest" />
+    <FunctionImportMapping FunctionImportName="SP_GetAllUnDoneRequest" FunctionName="SWareDBModel.Store.SP_GetAllUnDoneRequest">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllUnDoneRequest_Result">
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetRequestDetailByRequestID" FunctionName="SWareDBModel.Store.SP_GetRequestDetailByRequestID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetRequestDetailByRequestID_Result">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Request_ID" ColumnName="Request_ID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CreateGDN" FunctionName="SWareDBModel.Store.SP_CreateGDN" />
+    <FunctionImportMapping FunctionImportName="SP_PayGDN" FunctionName="SWareDBModel.Store.SP_PayGDN" />
+    <FunctionImportMapping FunctionImportName="SP_UpdateActualAmountGDN" FunctionName="SWareDBModel.Store.SP_UpdateActualAmountGDN" />
+    <FunctionImportMapping FunctionImportName="SP_EditCustomer" FunctionName="SWareDBModel.Store.SP_EditCustomer" />
+    <FunctionImportMapping FunctionImportName="SP_GetAllStaff" FunctionName="SWareDBModel.Store.SP_GetAllStaff">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAllStaff_Result">
+          <ScalarProperty Name="StaID" ColumnName="StaID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SearchStaffByString" FunctionName="SWareDBModel.Store.SP_SearchStaffByString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_SearchStaffByString_Result">
+          <ScalarProperty Name="StaID" ColumnName="StaID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductQuantityByID" FunctionName="SWareDBModel.Store.SP_GetProductQuantityByID" />
+    <FunctionImportMapping FunctionImportName="SP_CreateGRN" FunctionName="SWareDBModel.Store.SP_CreateGRN" />
+    <FunctionImportMapping FunctionImportName="SP_PayGRN" FunctionName="SWareDBModel.Store.SP_PayGRN" />
+    <FunctionImportMapping FunctionImportName="SP_SetGRNProductQuantity" FunctionName="SWareDBModel.Store.SP_SetGRNProductQuantity" />
+    <FunctionImportMapping FunctionImportName="SP_GetAmountOwn" FunctionName="SWareDBModel.Store.SP_GetAmountOwn">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetAmountOwn_Result">
+          <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+          <ScalarProperty Name="MoneyPaid" ColumnName="MoneyPaid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetProductQuantityInWarehouse" FunctionName="SWareDBModel.Store.SP_GetProductQuantityInWarehouse">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SWareDBModel.SP_GetProductQuantityInWarehouse_Result">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

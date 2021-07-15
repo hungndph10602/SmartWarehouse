@@ -1,0 +1,367 @@
+E:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+E:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+E:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.mdf
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB_log.ldf
+E:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+E:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+E:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+E:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_QuenMatKhau.resources
+D:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+D:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+D:\SWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+D:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+D:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+D:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+D:\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+E:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+E:\SWarehouse\SWarehouse\bin\Debug\ACCOUNT.cs
+E:\SWarehouse\SWarehouse\bin\Debug\BRAND.cs
+E:\SWarehouse\SWarehouse\bin\Debug\CATEGORy.cs
+E:\SWarehouse\SWarehouse\bin\Debug\COLOR.cs
+E:\SWarehouse\SWarehouse\bin\Debug\CUSTOMER.cs
+E:\SWarehouse\SWarehouse\bin\Debug\DELIVERY_REQUESTS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\DELIVERY_REQUEST_DETAILS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\GOODS_DELIVERY_NOTE.cs
+E:\SWarehouse\SWarehouse\bin\Debug\GOODS_DELIVERY_NOTE_DETAILS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\GOODS_RECEIVED_NOTE.cs
+E:\SWarehouse\SWarehouse\bin\Debug\GOODS_RECEIVED_NOTE_DETAILS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\MATERIAL.cs
+E:\SWarehouse\SWarehouse\bin\Debug\ORDER.cs
+E:\SWarehouse\SWarehouse\bin\Debug\ORDER_DETAILS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\PRODUCT.cs
+E:\SWarehouse\SWarehouse\bin\Debug\PRODUCT_SUPPLIER.cs
+E:\SWarehouse\SWarehouse\bin\Debug\PRODUCT_WAREHOUSE.cs
+E:\SWarehouse\SWarehouse\bin\Debug\ROLE.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SHIPMENT_OF_GOODS.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SIZE.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllCustomer_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllGDN_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllGRN_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllProduct_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllRequest_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllShipment_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllStaff_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetAllSupplier_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetCustomerById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetGDNById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetGRNById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetPIW_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetProductById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetProductBySupplier_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetRequestById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetShipmentById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetStaffById_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetStaffByUserName_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_GetSupplier_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SP_Login_Result.cs
+E:\SWarehouse\SWarehouse\bin\Debug\STAFF.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SUPPLIER.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+E:\SWarehouse\SWarehouse\bin\Debug\TYPE_OF_CATEGORY.cs
+E:\SWarehouse\SWarehouse\bin\Debug\UNIT.cs
+E:\SWarehouse\SWarehouse\bin\Debug\Warehouse.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+E:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+D:\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB.mdf
+D:\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB_log.ldf
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csprojAssemblyReference.cache
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D02_AddGRNDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D03_AddGRNDetailDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D04_AddGDNDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D05_AddGDNDetailDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_DoiMatKhau.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F11_FogotPassword.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F12_NoteRequest.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F13_Statistical.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F14_InsideMain.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB.mdf
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB_log.ldf
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F13_Statistical.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB.mdf
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB_log.ldf
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D02_AddGRNDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D03_AddGRNDetailDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D04_AddGDNDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D05_AddGDNDetailDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_DoiMatKhau.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F11_FogotPassword.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F12_NoteRequest.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F14_InsideMain.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csprojAssemblyReference.cache
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D02_AddGRNDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D03_AddGRNDetailDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D04_AddGDNDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D05_AddGDNDetailDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D08_SuplierDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D09_AddSupplierDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_DoiMatKhau.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F11_FogotPassword.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F12_NoteRequest.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F13_Statistical.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F14_InsideMain.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CoreCompileInputs.cache
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D08_SuplierDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D09_AddSupplierDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D10_EditSupplierDialog.resources
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+D:\SWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D11_NoteRequestDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D12_NoteRequestDetailDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D06_AddOrderDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D07_AddOrderDetail.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D08_SuplierDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D09_AddSupplierDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D10_EditSupplierDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D11_NoteRequestDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D12_NoteRequestDetailDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D06_AddOrderDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D07_AddOrderDetail.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D10_EditSupplierDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D11_NoteRequestDialog.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D12_NoteRequestDetailDialog.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D13_CreateAccount.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D13_CreateAccount.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D14_addproduct.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D15_editproduct.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F15_Product.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D06_AddOrderDialog.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D07_AddOrderDetail.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D13_CreateAccount.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D14_addproduct.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D15_editproduct.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F15_Product.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D14_addproduct.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D15_editproduct.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F15_Product.resources
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csprojAssemblyReference.cache
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.dll
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.pdb
+D:\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.dll
+D:\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.pdb
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.dll
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.pdb
+C:\Users\Admin\Source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D16_editCustomer.resources
+D:\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D16_editCustomer.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D16_editCustomer.resources
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.manifest
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\bin\Debug\SWarehouse.application
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.TrustInfo.xml
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe.manifest
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.application
+C:\Users\hongh\source\Repos\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.PayGRNDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB_log.ldf
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouseDB.mdf
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.manifest
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouse.application
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.dll
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.pdb
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+D:\Winform Project\SWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csprojAssemblyReference.cache
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D02_AddGRNDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D03_AddGRNDetailDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D04_AddGDNDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D05_AddGDNDetailDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D06_AddOrderDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D07_AddOrderDetail.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D08_SuplierDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D09_AddSupplierDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D10_EditSupplierDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D11_NoteRequestDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D12_NoteRequestDetailDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D13_CreateAccount.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D14_addproduct.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D15_editproduct.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D16_editCustomer.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.PayGRNDialog.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_DoiMatKhau.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F11_FogotPassword.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F12_NoteRequest.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F13_Statistical.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F14_InsideMain.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F15_Product.resources
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CoreCompileInputs.cache
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.TrustInfo.xml
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe.manifest
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.application
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+D:\Winform Project\SWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouseDB_log.ldf
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.Context.tt
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.tt
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouseDB.mdf
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.Context.cs
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.cs
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.Designer.cs
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWareDB.edmx.diagram
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.config
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouse.exe.manifest
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouse.application
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouse.exe
+D:\SmartWarehouse\SWarehouse\bin\Debug\SWarehouse.pdb
+D:\SmartWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.dll
+D:\SmartWarehouse\SWarehouse\bin\Debug\EntityFramework.dll
+D:\SmartWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.dll
+D:\SmartWarehouse\SWarehouse\bin\Debug\DataGridViewAutoFilter.pdb
+D:\SmartWarehouse\SWarehouse\bin\Debug\EntityFramework.xml
+D:\SmartWarehouse\SWarehouse\bin\Debug\EntityFramework.SqlServer.xml
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.csprojAssemblyReference.cache
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D01_AddCustomerDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D02_AddGRNDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D03_AddGRNDetailDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D04_AddGDNDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D05_AddGDNDetailDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D06_AddOrderDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D07_AddOrderDetail.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D08_SuplierDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D09_AddSupplierDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D10_EditSupplierDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D11_NoteRequestDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D12_NoteRequestDetailDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D13_CreateAccount.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D14_addproduct.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D15_editproduct.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.D16_editCustomer.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Dialog.PayGRNDialog.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Properties.Resources.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F01_Login.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F02_Main.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F03_QLHoSoNhanVien.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F04_QLKhachHang.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F05_QlNhapkho.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.F06_QLXuatKho.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F07_QLHoaDon.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SmartWarehouse.Views.F08_QLNhaCungCap.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SmartWareHouse.F09_QLNhanVien.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.F10_DoiMatKhau.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F11_FogotPassword.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F12_NoteRequest.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F13_Statistical.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F14_InsideMain.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.Views.F15_Product.resources
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.GenerateResource.cache
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CoreCompileInputs.cache
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.TrustInfo.xml
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.exe.manifest
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.application
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.csproj.CopyComplete
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.exe
+D:\SmartWarehouse\SWarehouse\obj\Debug\SWarehouse.pdb

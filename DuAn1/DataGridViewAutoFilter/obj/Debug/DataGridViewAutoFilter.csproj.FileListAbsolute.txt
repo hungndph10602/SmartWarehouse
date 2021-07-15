@@ -1,0 +1,17 @@
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.dll
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.pdb
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.csprojAssemblyReference.cache
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.csproj.CoreCompileInputs.cache
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.dll
+C:\Users\hongh\Documents\DataGridViewAutoFilter\CS\DataGridViewAutoFilter\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.pdb
+D:\SWarehouse\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.dll
+D:\SWarehouse\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.pdb
+D:\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.dll
+D:\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.pdb
+D:\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.csprojAssemblyReference.cache
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.dll
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\bin\Debug\DataGridViewAutoFilter.pdb
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.csprojAssemblyReference.cache
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.csproj.CoreCompileInputs.cache
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.dll
+D:\Winform Project\SWarehouse\DataGridViewAutoFilter\obj\Debug\DataGridViewAutoFilter.pdb
